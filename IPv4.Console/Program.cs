@@ -1,2 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using Spectre.Console;
+
+AnsiConsole.Write(new FigletText("IPv4 Addressing").Color(Color.Red));
