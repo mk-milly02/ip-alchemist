@@ -8,6 +8,27 @@ namespace IPv4.Console
 {
     public class IPv4Extensions
     {
+        public static bool ValidateMask(string ip)
+        {
+            if (ip.Contains('/'))
+            {
+                string mask = ip.Split('/')[1];
 
+                bool output = int.TryParse(mask, out int nBits);
+
+                if (output && nBits >= 1 && nBits < 32)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
