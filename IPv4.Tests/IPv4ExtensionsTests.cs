@@ -15,5 +15,25 @@ namespace IPv4.Tests
         {
             Assert.True(IPv4Extensions.ValidateMask(ip));
         }
+
+        [Fact]
+        public void ReturnTrue_IsIPValid()
+        {
+            // Given
+            string ip = "196.65.45.4";
+
+            Assert.True(IPv4Extensions.IsIPValid(ip));
+        }
+
+        [Theory]
+        [InlineData("196.65.45.4")]
+        [InlineData("196.0.45.4")]
+        [InlineData("3.65.45.4")]
+        [InlineData("0.0.45.4")]
+        [InlineData("196.65.0.4")]
+        public void IsIPValid(string ip)
+        {
+            Assert.True(IPv4Extensions.IsIPValid(ip));
+        }
     }
 }
