@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IPv4.Console
 {
-    public class IPv4
+    public class IPv4Extensions
     {
 
     }
