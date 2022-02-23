@@ -28,9 +28,9 @@ namespace IPv4.Tests
         [Theory]
         [InlineData("196.65.45.4")]
         [InlineData("196.0.45.4")]
-        [InlineData("3.65.45.4")]
-        [InlineData("0.0.45.4")]
-        [InlineData("196.65.0.4")]
+        [InlineData("3.65.45")]
+        [InlineData("0")]
+        [InlineData("196.65")]
         public void IsIPValid(string ip)
         {
             Assert.True(IPv4Extensions.IsIPValid(ip));
