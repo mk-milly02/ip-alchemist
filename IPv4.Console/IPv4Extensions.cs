@@ -34,7 +34,7 @@ namespace IPv4.Console
 
         public static bool IsIPValid(string ip)
         {
-            return IPAddress.TryParse(ip, out IPAddress? address);
+            return IPAddress.TryParse(ip, out _);
         }
     }
 }
