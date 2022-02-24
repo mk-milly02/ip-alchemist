@@ -69,5 +69,30 @@ namespace IPv4.Console
 
             return builder1.ToString();
         }
+
+        public static string GetNetworkAddress(string ip, string mask)
+        {
+            IPAddress iPAddress = IPAddress.Parse(ip);
+            IPAddress networkMask = IPAddress.Parse(mask);
+
+            byte[] ipBytes = iPAddress.GetAddressBytes();
+            byte[] maskBytes = networkMask.GetAddressBytes();
+
+            if (ipBytes.Length != maskBytes.Length)
+            {
+                throw new ArgumentException("The IP address and the network mask does not match");
+            }
+
+            byte[] networkAddressBytes = new byte[ipBytes.Length];
+
+            for (int i = 0; i < ipBytes.Length; i++)
+            {
+                networkAddressBytes[i] = (byte)(ipBytes[i] & maskBytes[i]);
+            }
+
+            IPAddress networkAddress = new(networkAddressBytes);
+
+            return networkAddress.ToString();
+        }
     }
 }

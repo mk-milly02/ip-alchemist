@@ -25,7 +25,9 @@ switch (choice)
         {
             string mask = IPv4Extensions.GenerateMask(networkBits);
 
-            AnsiConsole.MarkupLine($"[violet]{mask}[/]");
+            string networkAddress = IPv4Extensions.GetNetworkAddress(ip, mask);
+
+            AnsiConsole.MarkupLine($"[violet]{networkAddress}[/]");
         }
         else
         {
