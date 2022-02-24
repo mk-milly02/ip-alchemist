@@ -19,10 +19,13 @@ switch (choice)
             .Validate(address => IPv4Extensions.ValidateMask(address)));
 
         var ip = ipWithMask.Remove(ipWithMask.IndexOf('/'));
+        var networkBits = Convert.ToInt32(ipWithMask[(ipWithMask.IndexOf('/') + 1)..]);
 
         if (IPv4Extensions.IsIPValid(ip))
         {
-            
+            string mask = IPv4Extensions.GenerateMask(networkBits);
+
+            AnsiConsole.MarkupLine($"[violet]{mask}[/]");
         }
         else
         {
