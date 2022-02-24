@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace IPv4.Console
 {
@@ -43,11 +39,13 @@ namespace IPv4.Console
 
             StringBuilder builder = new(32);
 
+            //Set network bits to ones
             for (int i = 0; i < networkBits; i++)
             {
                 builder.Append('1');
             }
 
+            //Set host bits to zeros
             for (int i = 0; i < hostBits; i++)
             {
                 builder.Append('0');
@@ -57,6 +55,7 @@ namespace IPv4.Console
 
             var octects = mask.Chunk(8).ToList();
 
+            //Convert from binary to decimal
             string firstOctect = Convert.ToString(Convert.ToInt32(new string(octects[0]), 2), 10);
             string secondOctect = Convert.ToString(Convert.ToInt32(new string(octects[1]), 2), 10);
             string thirdOctect = Convert.ToString(Convert.ToInt32(new string(octects[2]), 2), 10);
@@ -64,6 +63,7 @@ namespace IPv4.Console
 
             string[] decOctects = new[] {firstOctect, secondOctect, thirdOctect, fourthOctect};
 
+            //Separate octects with dots
             StringBuilder builder1 = new();
             builder1.AppendJoin('.', decOctects);
 
