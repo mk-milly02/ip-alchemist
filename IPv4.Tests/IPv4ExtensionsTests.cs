@@ -35,5 +35,16 @@ namespace IPv4.Tests
         {
             Assert.True(IPv4Extensions.IsIPValid(ip));
         }
+
+        [Fact]
+        public void ShouldPass_GenerateMask()
+        {
+            // Given
+            string expected = "255.255.255.0";
+            // Then
+            string actual = IPv4Extensions.GenerateMask(24);
+
+            Assert.Equal(expected, actual);
+        }
     }
 }
