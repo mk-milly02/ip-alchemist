@@ -46,5 +46,19 @@ namespace IPv4.Tests
 
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ShouldPass_GetBroadcastAddress()
+        {
+            // Given
+            string ip = "196.168.0.1"; int netBits = 16;
+
+            string mask = IPv4Extensions.GenerateMask(netBits);
+            string netAd = IPv4Extensions.GetNetworkAddress(ip, mask);
+            string broadAd = IPv4Extensions.GetBroadcastAddress(netAd, mask);
+            // Then
+            Assert.True(netAd.Equals("196.168.0.0"));
+            Assert.True(broadAd.Equals("196.168.255.255"));
+        }
     }
 }
