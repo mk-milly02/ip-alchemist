@@ -94,5 +94,30 @@ namespace IPv4.Console
 
             return networkAddress.ToString();
         }
+
+        public static string GetBroadcastAddress(string networkAddress, string mask)
+        {
+            IPAddress networkAd = IPAddress.Parse(networkAddress);
+            IPAddress networkMask = IPAddress.Parse(mask);
+
+            byte[] networkAdBytes = networkAd.GetAddressBytes();
+            byte[] maskBytes = networkMask.GetAddressBytes();
+
+            if (networkAdBytes.Length != maskBytes.Length)
+            {
+                throw new ArgumentException("The network address and the network mask does not match");
+            }
+
+            byte[] broadcastBytes = new byte[networkAdBytes.Length];
+
+            for (int i = 0; i < networkAdBytes.Length; i++)
+            {
+                broadcastBytes[i] = (byte)(networkAdBytes[i] | ~maskBytes[i]);
+            }
+
+            IPAddress broadcastAddress = new(broadcastBytes);
+
+            return broadcastAddress.ToString();
+        }
     }
 }
