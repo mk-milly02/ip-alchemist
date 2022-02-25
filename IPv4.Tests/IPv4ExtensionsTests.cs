@@ -60,5 +60,16 @@ namespace IPv4.Tests
             Assert.True(netAd.Equals("196.168.0.0"));
             Assert.True(broadAd.Equals("196.168.255.255"));
         }
+
+        [Fact]
+        public void ShouldPass_TotalNumberOfAddresses()
+        {
+            // Given
+            int expected = 256;
+            // When
+            int actual = IPv4Extensions.TotalNumberOfAddresses(24);
+            // Then
+            Assert.Equal(expected, actual);
+        }
     }
 }
