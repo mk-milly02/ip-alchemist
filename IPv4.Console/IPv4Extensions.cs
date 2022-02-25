@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Text;
+using Spectre.Console;
 
 namespace IPv4.Console
 {
@@ -122,7 +123,48 @@ namespace IPv4.Console
 
         public static int TotalNumberOfAddresses(int networkBits)
         {
-            return (2 ^ (32 - networkBits));
+            return (int)Math.Pow(2, 32 - networkBits);
+        }
+
+        public static string GetRange(string networkAddress, string broadcastAddress)
+        {
+            IPAddress netAd = IPAddress.Parse(networkAddress);
+            IPAddress broadcast = IPAddress.Parse(broadcastAddress);
+
+            byte[] networkAdBytes = netAd.GetAddressBytes();
+            byte[] broadcastBytes = broadcast.GetAddressBytes();
+
+            networkAdBytes[3] += 0b1;
+            broadcastBytes[3] -= 0b1;
+
+            IPAddress first = new(networkAdBytes);
+            IPAddress last = new(broadcastBytes);
+
+            return first.ToString() + " ~ " + last.ToString();
+        }
+
+        public static void IPBasics(string ip, int networkBits)
+        {
+            string mask = GenerateMask(networkBits);
+            string networkAddress = GetNetworkAddress(ip, mask);
+            string broadcastAddress = GetBroadcastAddress(networkAddress, mask);
+            int totalAddresses = TotalNumberOfAddresses(networkBits);
+            int validHost = totalAddresses - 2;
+            string range = GetRange(networkAddress, broadcastAddress);
+
+            Table output = new();
+            output.Width(60);
+            output.Border(TableBorder.Rounded);
+            output.BorderColor(Color.Gold1);
+            output.AddColumns("", "[cyan]Information[/]");
+            output.AddRow("Network mask", mask);
+            output.AddRow("Network Address", networkAddress);
+            output.AddRow("Broadcast Address", broadcastAddress);
+            output.AddRow("Addressess(Total)", totalAddresses.ToString());
+            output.AddRow("Valid Host", validHost.ToString());
+            output.AddRow("Range", range);
+
+            AnsiConsole.Write(output);
         }
     }
 }
