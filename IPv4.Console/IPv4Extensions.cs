@@ -119,5 +119,10 @@ namespace IPv4.Console
 
             return broadcastAddress.ToString();
         }
+
+        public static int TotalNumberOfAddresses(int networkBits)
+        {
+            return (2 ^ (32 - networkBits));
+        }
     }
 }
