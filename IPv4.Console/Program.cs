@@ -23,11 +23,8 @@ switch (choice)
 
         if (IPv4Extensions.IsIPValid(ip))
         {
-            string mask = IPv4Extensions.GenerateMask(networkBits);
-
-            string networkAddress = IPv4Extensions.GetNetworkAddress(ip, mask);
-
-            AnsiConsole.MarkupLine($"[violet]{networkAddress}[/]");
+            Console.Write("\n");
+            IPv4Extensions.IPBasics(ip, networkBits);
         }
         else
         {

@@ -162,7 +162,7 @@ namespace IPv4.Console
             output.AddRow("Broadcast Address", broadcastAddress);
             output.AddRow("Addressess(Total)", totalAddresses.ToString());
             output.AddRow("Valid Host", validHost.ToString());
-            output.AddRow("Range", range);
+            output.AddRow("Range", $"[yellow]{range}[/]");
 
             AnsiConsole.Write(output);
         }
