@@ -166,5 +166,29 @@ namespace IPv4.Console
 
             AnsiConsole.Write(output);
         }
+
+        public static bool ValidateHostGroups(string groups)
+        {
+            bool output = true;
+            var hosts = groups.Split(',');
+
+            List<int> Hosts = new();
+
+            for (int i = 0; i < hosts.Length; i++)
+            {
+                output = int.TryParse(hosts[i], out int host);
+
+                if (output)
+                {
+                    Hosts.Add(host);
+                }
+                else
+                {
+                    return output;
+                }
+            }
+
+            return output;
+        }
     }
 }
