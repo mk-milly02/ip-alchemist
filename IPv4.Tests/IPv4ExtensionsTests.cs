@@ -71,5 +71,13 @@ namespace IPv4.Tests
             // Then
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ReturnTrue()
+        {
+            bool output = IPv4Extensions.ValidateHostGroups("10");
+
+            Assert.True(output);
+        }
     }
 }
