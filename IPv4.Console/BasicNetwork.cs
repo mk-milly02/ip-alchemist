@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace IPv4
+namespace IPv4.Console
 {
     public class BasicNetwork
     {
