@@ -190,5 +190,20 @@ namespace IPv4.Console
 
             return output;
         }
+
+        public static List<int> GetHostGroups(string hosts)
+        {
+            var _hosts = hosts.Split(',').ToList();
+
+            List<int> output = new();
+
+            foreach (var item in _hosts)
+            {
+                output.Add(int.Parse(item));
+            }
+
+            return output;
+        }
+
     }
 }
