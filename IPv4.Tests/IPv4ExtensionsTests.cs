@@ -91,5 +91,16 @@ namespace IPv4.Tests
             // Then
             Assert.True(actual.Count.Equals(4));
         }
+
+        [Fact]
+        public void ReturnTrue_FindPowerOfTwo()
+        {
+            // Given
+            int expected = 128;
+            // When
+            int actual = IPv4Extensions.FindPowerOfTwo(125);
+            // Then
+            Assert.Equal(expected, actual);
+        }
     }
 }
