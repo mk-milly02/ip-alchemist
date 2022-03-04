@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using IPv4.Console;
 using Xunit;
 
@@ -78,6 +79,17 @@ namespace IPv4.Tests
             bool output = IPv4Extensions.ValidateHostGroups("10");
 
             Assert.True(output);
+        }
+
+        [Fact]
+        public void ShouldPass_GetHostGroups()
+        {
+            // Given
+            string hosts = "10, 20, 30, 40";
+            // When
+            List<int> actual = IPv4Extensions.GetHostGroups(hosts);
+            // Then
+            Assert.True(actual.Count.Equals(4));
         }
     }
 }
