@@ -14,9 +14,7 @@ namespace IPv4.Console
 
         public IPAddress? BroadcastAddress { get; set; }
 
-        public IPAddress? FirstAddress { get; set; }
-
-        public IPAddress? LastAddress { get; set; }
+        public string? Range { get; set; }
 
         public int TotalHosts { get; set; }
 
