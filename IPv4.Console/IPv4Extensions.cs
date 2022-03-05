@@ -9,12 +9,12 @@ namespace IPv4.Console
         {
             if (int.TryParse(prefixLength, out _))
             {
-                return false;
+                var x = int.Parse(prefixLength);
+                return x > 1 && x < 32;
             }
             else
             {
-                var x = int.Parse(prefixLength);
-                return x > 1 && x < 32;
+                return false;
             }
         }
 
