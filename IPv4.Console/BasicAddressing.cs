@@ -1,15 +1,17 @@
+using System.Net;
 using Spectre.Console;
 
 namespace IPv4.Console
 {
     public static class BasicAddressing
     {
-        private static BasicNetwork? Network { get; set; }
+        private static BasicNetwork Network { get; set; }
 
         static string AskForAvailableIPAddress()
         {
             var ip = AnsiConsole.Prompt(
                 new TextPrompt<string>("[lime]?[/] What is the available IP Address [blue]eg. 196.128.0.4[/]: ")
+                .PromptStyle(new Style(Color.Aqua))
                 .Validate(ip => IPv4Extensions.IsIPAddress(ip)
                 ? ValidationResult.Success()
                 : ValidationResult.Error("[red]! This is not a vaild IP address.[/]")));
@@ -17,16 +19,24 @@ namespace IPv4.Console
             return ip;
         }
 
-        static int AskForNetworkMask()
+        static int AskForPrefixLength()
         {
-            var mask = AnsiConsole.Prompt(
+            var length = AnsiConsole.Prompt(
                 new TextPrompt<string>("[lime]?[/] Enter the network mask: ")
-                .Validate(mask => IPv4Extensions.ValidateNetworkMask(mask)
+                .PromptStyle(new Style(Color.Chartreuse3))
+                .Validate(length => IPv4Extensions.ValidatePrefixLength(length)
                 ? ValidationResult.Success()
-                : ValidationResult.Error("[red]! A prefix length must be between 1 and 32")));
+                : ValidationResult.Error("[red]! A prefix length must be between 1 and 32[/]")));
 
-            return int.Parse(mask);
+            return int.Parse(length);
         }
 
+        public static void Run()
+        {
+            Network = new();
+            Network.AvailableAddress = IPAddress.Parse(AskForAvailableIPAddress());
+            Network.NetworkBits = AskForPrefixLength();
+            Network.Tabulate();
+        }
     }
 }
