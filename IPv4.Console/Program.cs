@@ -2,38 +2,23 @@
 using IPv4.Console;
 using Spectre.Console;
 
-AnsiConsole.Write(new FigletText("IPv4 Addressing").Color(Color.Red));
+AnsiConsole.Write(new FigletText("IPv4 Addressing").Color(Color.Orange3));
 
 var choice = AnsiConsole.Prompt(new SelectionPrompt<string>().PageSize(10)
     .Title("[lime]?[/] What do you [green]want to do[/]?")
-    .AddChoices("IP Basics", "IP Subnetting"));
+    .AddChoices("Basic Addressing", "IP Subnetting"));
 
 switch (choice)
 {
-    case "IP Basics":
+    case "Basic Addressing":
+        BasicAddressing.Run();
+    break;
 
-        var ipWithMask = AnsiConsole.Prompt(
-            new TextPrompt<string>("[lime]?[/] Enter the available IP address with mask [blue]eg. 196.128.0.4/24[/]: ")
-            .PromptStyle("green")
-            .ValidationErrorMessage("[red]> The mask is invalid.[/]")
-            .Validate(address => IPv4Extensions.ValidateMask(address)));
-
-        var ip = ipWithMask.Remove(ipWithMask.IndexOf('/'));
-        var networkBits = Convert.ToInt32(ipWithMask[(ipWithMask.IndexOf('/') + 1)..]);
-
-        if (IPv4Extensions.IsIPValid(ip))
-        {
-            Console.Write("\n");
-            IPv4Extensions.IPBasics(ip, networkBits);
-        }
-        else
-        {
-            AnsiConsole.MarkupLine("[red]> This IP address is invalid[/]");
-        }
-
+    case "IP Subnetting":
     break;
 
     default:
+    Environment.Exit(0);
     break;
 }
 
