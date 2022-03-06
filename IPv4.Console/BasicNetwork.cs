@@ -28,13 +28,15 @@ namespace IPv4.Console
             Table output = new();
             output.Border(TableBorder.Rounded);
             output.BorderColor(Color.Gold1);
-            output.AddColumns("", "");
+            output.MinimalBorder();
+            output.Width(70);
+            output.AddColumns($"{Emoji.Known.Rocket}", "[violet]Network Credentials[/]");
             output.AddRow("Network mask", NetworkMask.ToString());
             output.AddRow("[red]Network Address[/]", NetworkAddress.ToString());
             output.AddRow("Broadcast Address", BroadcastAddress.ToString());
             output.AddRow("[lime]Addressess(Total)[/]", TotalHosts.ToString());
             output.AddRow("Valid Host", TotalValidHosts.ToString());
-            output.AddRow("Range", $"[yellow]{Range}[/]");
+            output.AddRow("[blue]Range[/]", $"[yellow]{Range}[/]");
 
             AnsiConsole.Write(output);
         }
