@@ -15,5 +15,18 @@ namespace IPv4.Console
 
             return ip;
         }
+
+        static int AskForNumberOfSubnets()
+        {
+            var subnets = AnsiConsole.Prompt(
+                new TextPrompt<string>("[lime]?[/] Enter your desired number of subnets: ")
+                .PromptStyle(new Style(Color.DarkOrange))
+                .Validate(number => int.TryParse(number, out _)
+                ? ValidationResult.Success()
+                : ValidationResult.Error("[red]! Invalid number of subnets.[/]"))
+            );
+
+            return int.Parse(subnets);
+        }
     }
 }
