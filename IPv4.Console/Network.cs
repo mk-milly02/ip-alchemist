@@ -31,7 +31,8 @@ namespace IPv4.Console
             output.MinimalBorder();
             output.Width(70);
             output.AddColumns($"{Emoji.Known.Rocket}", "[violet]Network Credentials[/]");
-            output.AddRow("Network mask", NetworkMask.ToString());
+            output.AddRow("[cyan]Network mask[/]", NetworkMask.ToString());
+            output.AddRow("Network Bits", NetworkBits.ToString());
             output.AddRow("[red]Network Address[/]", NetworkAddress.ToString());
             output.AddRow("Broadcast Address", BroadcastAddress.ToString());
             output.AddRow("[lime]Addressess(Total)[/]", TotalHosts.ToString());
