@@ -20,7 +20,14 @@ namespace IPv4.Console
 
         public static bool IsIPAddress(string ip)
         {
-            return IPAddress.TryParse(ip, out _);
+            if (ip.Length < 8)
+            {
+                return false;
+            }
+            else    
+            {
+                return IPAddress.TryParse(ip, out _);
+            }
         }
 
         public static IPAddress GenerateNetworkMask(int networkBits)
