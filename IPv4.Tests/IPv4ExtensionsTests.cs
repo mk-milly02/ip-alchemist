@@ -16,5 +16,14 @@ namespace IPv4.Tests
             // Then
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData("12.0.0.1")]
+        [InlineData("0.200.100.8")]
+        [InlineData("198.25.5.1")]
+        public void IsAValidIPAddress(string ip)
+        {
+            Assert.True(IPv4Extensions.IsIPAddress(ip));
+        }
     }
 }
