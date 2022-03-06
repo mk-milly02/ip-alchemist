@@ -5,7 +5,7 @@ namespace IPv4.Console
 {
     public static class BasicAddressing
     {
-        private static BasicNetwork Network { get; set; }
+        private static Network Network { get; set; }
 
         static string AskForAvailableIPAddress()
         {

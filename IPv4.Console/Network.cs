@@ -3,7 +3,7 @@ using Spectre.Console;
 
 namespace IPv4.Console
 {
-    public class BasicNetwork
+    public class Network
     {
         public IPAddress AvailableAddress { get; set; }
 
