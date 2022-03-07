@@ -39,7 +39,7 @@ namespace IPv4.Console
                 var hosts = AnsiConsole.Prompt(
                     new TextPrompt<string>($"[lime]?[/] Enter number of hosts in subnet {i++}: ")
                     .PromptStyle(new Style(Color.Purple4))
-                    .Validate(number => int.TryParse(number, out _)
+                    .Validate(number => IPv4Extensions.ValidateNumberOfHosts(number)
                     ? ValidationResult.Success()
                     : ValidationResult.Error("[red]! Invalid number of hosts.[/]")));
 
