@@ -31,5 +31,11 @@ namespace IPv4.Tests
         {
             Assert.True(IPv4Extensions.ValidateNumberOfSubnets("32"));
         }
+
+        [Fact]
+        public void ShouldPass_ValidateNumberOfHosts()
+        {
+            Assert.False(IPv4Extensions.ValidateNumberOfHosts("12022028287383772"));
+        }
     }
 }
