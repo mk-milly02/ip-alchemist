@@ -25,5 +25,11 @@ namespace IPv4.Tests
         {
             Assert.True(IPv4Extensions.IsIPAddress(ip));
         }
+
+        [Fact]
+        public void ShouldPass_ValidateNumberOfSubnets()
+        {
+            Assert.True(IPv4Extensions.ValidateNumberOfSubnets("32"));
+        }
     }
 }
