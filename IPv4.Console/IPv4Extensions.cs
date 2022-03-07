@@ -127,5 +127,17 @@ namespace IPv4.Console
                 return false;
             }
         }
+
+        public static bool ValidateNumberOfHosts(string number)
+        {
+            if (int.TryParse(number, out int x))
+            {
+                return x > 0;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
