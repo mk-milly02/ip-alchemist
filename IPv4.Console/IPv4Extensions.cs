@@ -116,5 +116,16 @@ namespace IPv4.Console
             return first.ToString() + " ~ " + last.ToString();
         }
 
+        public static bool ValidateNumberOfSubnets(string number)
+        {
+            if (int.TryParse(number, out int x))
+            {
+                return x > 1;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
