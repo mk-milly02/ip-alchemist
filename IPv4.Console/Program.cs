@@ -15,6 +15,7 @@ switch (choice)
     break;
 
     case "IP Subnetting":
+        IPSubnetting.Run();
     break;
 
     default:
