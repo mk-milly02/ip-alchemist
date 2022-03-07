@@ -37,7 +37,7 @@ namespace IPv4.Console
             for (int i = 0; i < numberOfSubnets; i++)
             {
                 var hosts = AnsiConsole.Prompt(
-                    new TextPrompt<string>($"[lime]?[/] Enter number of hosts in subnet {i++}: ")
+                    new TextPrompt<string>($"[lime]?[/] Enter number of hosts in subnet {i + 1}: ")
                     .PromptStyle(new Style(Color.Purple4))
                     .Validate(number => IPv4Extensions.ValidateNumberOfHosts(number)
                     ? ValidationResult.Success()
@@ -47,6 +47,13 @@ namespace IPv4.Console
             }
 
             return output;
+        }
+
+        public static void Run()
+        {
+            var ip = AskForAvailableIPAddress();
+
+            var hosts = AskForNumberOfHosts();
         }
     }
 }
