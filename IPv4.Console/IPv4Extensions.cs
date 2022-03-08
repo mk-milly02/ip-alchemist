@@ -139,5 +139,26 @@ namespace IPv4.Console
                 return false;
             }
         }
+
+        public static List<int> FindPowersOfTwo(List<int> hosts)
+        {
+            List<int> ouput = new();
+
+            for (int i = 0; i < hosts.Count; i++)
+            {
+                for (int j = 0; j < 32; j++)
+                {
+                    double power = Math.Pow(2, j);
+
+                    if (power >= hosts[i])
+                    {
+                        ouput.Add((int)power);
+                        break;
+                    }
+                }
+            }
+
+            return ouput;
+        }
     }
 }
