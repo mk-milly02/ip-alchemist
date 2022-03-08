@@ -140,9 +140,9 @@ namespace IPv4.Console
             }
         }
 
-        public static List<int> FindPowersOfTwo(List<int> hosts)
+        public static List<PowerOfTwo> FindPowersOfTwo(List<int> hosts)
         {
-            List<int> ouput = new();
+            List<PowerOfTwo> ouput = new();
 
             for (int i = 0; i < hosts.Count; i++)
             {
@@ -152,7 +152,8 @@ namespace IPv4.Console
 
                     if (power >= hosts[i])
                     {
-                        ouput.Add((int)power);
+                        PowerOfTwo pO2 = new((int)Math.Log2(power), (int)power);
+                        ouput.Add(pO2);
                         break;
                     }
                 }
