@@ -37,5 +37,16 @@ namespace IPv4.Tests
         {
             Assert.False(IPv4Extensions.ValidateNumberOfHosts("12022028287383772"));
         }
+
+        [Fact]
+        public void ShouldPass_FindPowersOfTwo()
+        {
+            // Given
+            List<int> expected = new() {16, 32, 32, 64, 128};
+            // When
+            var actual = IPv4Extensions.FindPowersOfTwo(new() {10, 20, 30, 40, 100});
+            // Then
+            Assert.Equal(expected, actual);
+        }
     }
 }
