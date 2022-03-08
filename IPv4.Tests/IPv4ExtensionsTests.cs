@@ -42,7 +42,7 @@ namespace IPv4.Tests
         public void ShouldPass_FindPowersOfTwo()
         {
             // Given
-            List<int> expected = new() {16, 32, 32, 64, 128};
+            List<PowerOfTwo> expected = new() {new(4, 16), new(5, 32), new(5, 32), new(6, 64), new(7, 128)};
             // When
             var actual = IPv4Extensions.FindPowersOfTwo(new() {10, 20, 30, 40, 100});
             // Then
