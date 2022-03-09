@@ -5,8 +5,6 @@ namespace IPv4.Console
 {
     public class IPSubnetting
     {
-        private static List<SubNetwork> SubNetworks { get; set; }
-
         private static Network Network { get; set; }
 
         static string AskForAvailableIPAddress()
@@ -32,7 +30,7 @@ namespace IPv4.Console
 
             return int.Parse(length);
         }
-        
+
         static int AskForNumberOfSubnets()
         {
             var subnets = AnsiConsole.Prompt(
@@ -71,7 +69,9 @@ namespace IPv4.Console
             Network = new();
             Network.AvailableAddress = IPAddress.Parse(AskForAvailableIPAddress());
             Network.NetworkBits = AskForPrefixLength();
+            Network.SubnetHosts = IPv4Extensions.FindPowersOfTwo(AskForNumberOfHosts());
             Network.Tabulate();
+            Network.Subnet();
         }
     }
 }
