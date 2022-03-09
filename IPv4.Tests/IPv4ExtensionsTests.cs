@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Net;
 using IPv4.Console;
 using Xunit;
 
@@ -45,6 +46,17 @@ namespace IPv4.Tests
             List<PowerOfTwo> expected = new() {new(4, 16), new(5, 32), new(5, 32), new(6, 64), new(7, 128)};
             // When
             var actual = IPv4Extensions.FindPowersOfTwo(new() {10, 20, 30, 40, 100});
+            // Then
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void ShouldPass_GetNextAvailableIP()
+        {
+            // Given
+            string expected = "198.126.0.1";
+            // When
+            string actual = IPv4Extensions.GetNextAvailableIP(IPAddress.Parse("198.126.0.0")).ToString();
             // Then
             Assert.Equal(expected, actual);
         }
