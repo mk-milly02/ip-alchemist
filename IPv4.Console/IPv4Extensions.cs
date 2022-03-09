@@ -161,5 +161,13 @@ namespace IPv4.Console
 
             return ouput;
         }
+
+        public static IPAddress GetNextAvailableIP(IPAddress last)
+        {
+            var lastBytes = last.GetAddressBytes();
+            lastBytes[3] += 0b1;
+
+            return new(lastBytes);
+        }
     }
 }
