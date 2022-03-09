@@ -1,9 +1,14 @@
+using System.Net;
 using Spectre.Console;
 
 namespace IPv4.Console
 {
     public class IPSubnetting
     {
+        private static List<SubNetwork> SubNetworks { get; set; }
+
+        private static Network Network { get; set; }
+
         static string AskForAvailableIPAddress()
         {
             var ip = AnsiConsole.Prompt(
@@ -16,6 +21,18 @@ namespace IPv4.Console
             return ip;
         }
 
+        static int AskForPrefixLength()
+        {
+            var length = AnsiConsole.Prompt(
+                new TextPrompt<string>("[lime]?[/] Enter the network mask: ")
+                .PromptStyle(new Style(Color.Chartreuse3))
+                .Validate(length => IPv4Extensions.ValidatePrefixLength(length)
+                ? ValidationResult.Success()
+                : ValidationResult.Error("[red]! A prefix length must be between 1 and 32[/]")));
+
+            return int.Parse(length);
+        }
+        
         static int AskForNumberOfSubnets()
         {
             var subnets = AnsiConsole.Prompt(
@@ -51,9 +68,10 @@ namespace IPv4.Console
 
         public static void Run()
         {
-            var ip = AskForAvailableIPAddress();
-
-            var hosts = AskForNumberOfHosts();
+            Network = new();
+            Network.AvailableAddress = IPAddress.Parse(AskForAvailableIPAddress());
+            Network.NetworkBits = AskForPrefixLength();
+            Network.Tabulate();
         }
     }
 }
