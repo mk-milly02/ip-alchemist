@@ -21,7 +21,9 @@ namespace IPv4.Console
 
         public int TotalValidHosts => TotalHosts - 2;
 
-        public List<PowerOfTwo> SubnetHosts { get; set; }
+        public List<int> ActualHosts { get; set; }
+
+        public List<PowerOfTwo> SubnetHosts => IPv4Extensions.FindPowersOfTwo(ActualHosts);
 
         public List<SubNetwork> Subnets { get; set; }
 
@@ -52,7 +54,7 @@ namespace IPv4.Console
             SubNetwork sub = new();
             sub.Number = 1;
             sub.AvailableAddress = AvailableAddress;
-            sub.DesiredHost = SubnetHosts[0].Power;
+            sub.DesiredHost = ActualHosts[0];
             sub.NetworkBits = 32 - SubnetHosts[0].Index;
 
             Subnets.Add(sub);
@@ -60,10 +62,10 @@ namespace IPv4.Console
             for (int i = 1; i < SubnetHosts.Count; i++)
             {
                 SubNetwork sn = new();
-                sub.Number = i + 1;
+                sn.Number = i + 1;
                 sn.AvailableAddress = 
                 IPv4Extensions.GetNextAvailableIP(Subnets[i - 1].BroadcastAddress);
-                sn.DesiredHost = SubnetHosts[i].Power;
+                sn.DesiredHost = ActualHosts[i];
                 sn.NetworkBits = 32 - SubnetHosts[i].Index;
                 Subnets.Add(sn);
             }

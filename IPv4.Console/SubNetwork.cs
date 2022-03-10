@@ -16,7 +16,7 @@ namespace IPv4.Console
         public override void Tabulate()
         {
             AnsiConsole.Write("\n");
-            Rule rule = new($"[blue]subnet{Number}[/]");
+            Rule rule = new($"[gold1]Subnet {Number}[/]");
             rule.Alignment(Justify.Left);
             AnsiConsole.Write(rule);
 
@@ -32,8 +32,9 @@ namespace IPv4.Console
             output.AddRow("[lime]Desired(Total)[/]", DesiredHost.ToString());
             output.AddRow("Valid Host", TotalValidHosts.ToString());
             output.AddRow("[blue]Range[/]", $"[yellow]{Range}[/]");
-            output.AddRow("[blue]Unused Addresses[/]", $"[yellow]{SpareHostAddresses}[/]");
+            output.AddRow("[orange3]Unused Addresses[/]", $"[blueviolet]{SpareHostAddresses}[/]");
 
+            AnsiConsole.Write("\n");
             AnsiConsole.Write(output);
         }
     }

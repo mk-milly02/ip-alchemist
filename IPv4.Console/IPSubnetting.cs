@@ -69,7 +69,7 @@ namespace IPv4.Console
             Network = new();
             Network.AvailableAddress = IPAddress.Parse(AskForAvailableIPAddress());
             Network.NetworkBits = AskForPrefixLength();
-            Network.SubnetHosts = IPv4Extensions.FindPowersOfTwo(AskForNumberOfHosts());
+            Network.ActualHosts = AskForNumberOfHosts();
             Network.Tabulate();
             Network.Subnet();
         }
