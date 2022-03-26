@@ -36,13 +36,13 @@ namespace IPv4.Console
             output.BorderColor(Color.Gold1);
             output.MinimalBorder();
             output.Width(70);
-            output.AddColumns($"{Emoji.Known.Rocket}", "[violet]Network Credentials[/]");
+            output.AddColumns($"🚀", "[violet]Network Credentials[/]");
             output.AddRow("[cyan]Network mask[/]", NetworkMask.ToString());
             output.AddRow("Network Bits", "[red]/[/]" + NetworkBits.ToString());
             output.AddRow("[red]Network Address[/]", NetworkAddress.ToString());
             output.AddRow("Broadcast Address", BroadcastAddress.ToString());
             output.AddRow("[lime]Addressess(Total)[/]", TotalHosts.ToString());
-            output.AddRow("Valid Host", TotalValidHosts.ToString());
+            output.AddRow("Valid Hosts", TotalValidHosts.ToString());
             output.AddRow("[blue]Range[/]", $"[yellow]{Range}[/]");
 
             AnsiConsole.Write(output);
