@@ -20,7 +20,7 @@ namespace IPv4.Console
 
         public static bool IsIPAddress(string ip)
         {
-            if (ip.Length < 8)
+            if (ip.Length < 7)
             {
                 return false;
             }
