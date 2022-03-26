@@ -36,7 +36,7 @@ namespace IPv4.Console
             output.BorderColor(Color.Gold1);
             output.MinimalBorder();
             output.Width(70);
-            output.AddColumns($"🚀", "[violet]Network Credentials[/]");
+            output.AddColumns($"", "[violet]Network Credentials[/]");
             output.AddRow("[cyan]Network mask[/]", NetworkMask.ToString());
             output.AddRow("Network Bits", "[red]/[/]" + NetworkBits.ToString());
             output.AddRow("[red]Network Address[/]", NetworkAddress.ToString());

@@ -22,7 +22,7 @@ namespace IPv4.Console
         static int AskForPrefixLength()
         {
             var length = AnsiConsole.Prompt(
-                new TextPrompt<string>("[lime]?[/] Enter the prefix length [blue]/network bits: ")
+                new TextPrompt<string>("[lime]?[/] Enter the prefix length [blue]/network bits[/]: ")
                 .PromptStyle(new Style(Color.Chartreuse3))
                 .Validate(length => IPv4Extensions.ValidatePrefixLength(length)
                 ? ValidationResult.Success()
