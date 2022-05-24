@@ -1,10 +1,10 @@
 # IPv4
 
-A simple console application that helps in the basic addressing and subnetting of IPv4 addresses.
+A simple console application that supports subnetting of IPv4 addresses using variable length subnet mask(VLSM).
 
 ![image](https://github.com/mk-milly02/IPv4/blob/master/Screenshots/Screenshot%202022-03-10%20174722.png)
 
-## Basic Addressing
+## Structured Overview of Networks
 
 This requires an IP address and the prefix length in order to generate the output below.
 
