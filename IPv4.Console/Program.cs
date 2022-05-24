@@ -6,11 +6,11 @@ AnsiConsole.Write(new FigletText("IPv4 Addressing").Color(Color.Orange3));
 
 var choice = AnsiConsole.Prompt(new SelectionPrompt<string>().PageSize(10)
     .Title("[lime]?[/] What do you [green]want to do[/]?")
-    .AddChoices("Basic Addressing", "IP Subnetting"));
+    .AddChoices("Network Overview", "IP Subnetting"));
 
 switch (choice)
 {
-    case "Basic Addressing":
+    case "Network Overview":
         BasicAddressing.Run();
     break;
 
