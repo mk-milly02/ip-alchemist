@@ -1,5 +1,5 @@
-using System.Net;
 using Spectre.Console;
+using System.Net;
 
 namespace IPv4.Console
 {
@@ -66,10 +66,12 @@ namespace IPv4.Console
 
         public static void Run()
         {
-            Network = new();
-            Network.AvailableAddress = IPAddress.Parse(AskForAvailableIPAddress());
-            Network.NetworkBits = AskForPrefixLength();
-            Network.ActualHosts = AskForNumberOfHosts();
+            Network = new()
+            {
+                AvailableAddress = IPAddress.Parse(AskForAvailableIPAddress()),
+                NetworkBits = AskForPrefixLength(),
+                ActualHosts = AskForNumberOfHosts()
+            };
             Network.Tabulate();
             Network.Subnet();
         }

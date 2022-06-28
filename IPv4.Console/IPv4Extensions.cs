@@ -24,7 +24,7 @@ namespace IPv4.Console
             {
                 return false;
             }
-            else    
+            else
             {
                 return IPAddress.TryParse(ip, out _);
             }
@@ -39,7 +39,7 @@ namespace IPv4.Console
 
             //Set host bits to zero
             builder.Append('0', 32 - networkBits);
-            
+
             var octects = builder.ToString().Chunk(8).ToList();
 
             byte[] maskBytes = new byte[4];

@@ -12,15 +12,15 @@ switch (choice)
 {
     case "Network Overview":
         BasicAddressing.Run();
-    break;
+        break;
 
     case "IP Subnetting":
         IPSubnetting.Run();
-    break;
+        break;
 
     default:
-    Environment.Exit(0);
-    break;
+        Environment.Exit(0);
+        break;
 }
 
 Console.ReadKey();

@@ -1,13 +1,13 @@
-using System.Net;
 using Spectre.Console;
+using System.Net;
 
 namespace IPv4.Console
 {
     public class SubNetwork : Network
     {
-        public int DesiredHost { get; set; } 
+        public int DesiredHost { get; set; }
 
-        public int SpareHostAddresses  => TotalValidHosts - DesiredHost;
+        public int SpareHostAddresses => TotalValidHosts - DesiredHost;
 
         public IPAddress NextAvailableIP { get; set; }
 
