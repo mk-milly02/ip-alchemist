@@ -7,6 +7,7 @@ namespace IPv4.Console
     {
         public static bool ValidatePrefixLength(string prefixLength)
         {
+            //TODO: Refactor this
             if (int.TryParse(prefixLength, out _))
             {
                 var x = int.Parse(prefixLength);
@@ -30,7 +31,7 @@ namespace IPv4.Console
             }
         }
 
-        public static IPAddress GenerateNetworkMask(int networkBits)
+        public static (IPAddress decimalMask, string binaryMask) GenerateNetworkMask(int networkBits)
         {
             StringBuilder builder = new(32);
 
@@ -44,12 +45,14 @@ namespace IPv4.Console
 
             byte[] maskBytes = new byte[4];
 
+            string binMask = new(new string(octects[0]) + "." + new string(octects[1]) + "." + new string(octects[2]) + "." + new string(octects[3]));
+
             for (int i = 0; i < 4; i++)
             {
                 maskBytes[i] = (byte)Convert.ToInt32(new string(octects[i]), 2);
             }
 
-            return new IPAddress(maskBytes);
+            return (new IPAddress(maskBytes), binMask);
         }
 
         public static IPAddress GetNetworkAddress(IPAddress ip, IPAddress mask)

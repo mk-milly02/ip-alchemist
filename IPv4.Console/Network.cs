@@ -7,7 +7,9 @@ namespace IPv4.Console
     {
         public IPAddress AvailableAddress { get; set; }
 
-        public IPAddress NetworkMask => IPv4Extensions.GenerateNetworkMask(NetworkBits);
+        public IPAddress NetworkMask => IPv4Extensions.GenerateNetworkMask(NetworkBits).decimalMask;
+
+        public string BinaryNetworkMask => IPv4Extensions.GenerateNetworkMask(NetworkBits).binaryMask;
 
         public int NetworkBits { get; set; }
 
@@ -32,12 +34,12 @@ namespace IPv4.Console
             AnsiConsole.Write("\n");
 
             Table output = new();
-            output.Border(TableBorder.Rounded);
             output.BorderColor(Color.Gold1);
             output.MinimalBorder();
             output.Width(70);
-            output.AddColumns($"", "[violet]Network Credentials[/]");
+            output.AddColumns($"", "[violet]Network Information[/]");
             output.AddRow("[cyan]Network mask[/]", NetworkMask.ToString());
+            output.AddRow("[blueviolet]Binary network mask[/]", BinaryNetworkMask);
             output.AddRow("Network Bits", "[red]/[/]" + NetworkBits.ToString());
             output.AddRow("[red]Network Address[/]", NetworkAddress.ToString());
             output.AddRow("Broadcast Address", BroadcastAddress.ToString());

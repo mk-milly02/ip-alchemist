@@ -2,18 +2,32 @@ using IPv4.Console;
 using System.Collections.Generic;
 using System.Net;
 using Xunit;
+using System.Text;
+using System.Linq;
+using System;
 
 namespace IPv4.Tests
 {
     public class IPv4ExtensionsTests
     {
         [Fact]
-        public void ShouldPass_GenerateNetworkMask()
+        public void ShouldPass_GenerateNetworkMaskInDecimal()
         {
             // Given
             string expected = "255.255.255.192";
             // When
-            string actual = IPv4Extensions.GenerateNetworkMask(26).ToString();
+            string actual = IPv4Extensions.GenerateNetworkMask(26).decimalMask.ToString();
+            // Then
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void ShouldPass_GenerateNetworkMaskInBinary()
+        {
+            // Given
+            string expected = "11111111.11111111.11111111.11000000";
+            // When
+            string actual = IPv4Extensions.GenerateNetworkMask(26).binaryMask;
             // Then
             Assert.Equal(expected, actual);
         }
