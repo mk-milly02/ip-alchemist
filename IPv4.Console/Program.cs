@@ -3,7 +3,7 @@ using IPv4.Console;
 using Spectre.Console;
 
 AnsiConsole.Write(new FigletText("IPv4 Addressing").Color(Color.Orange3));
-AnsiConsole.MarkupLine("[navy dim italic]Made by Jonas[/]");
+AnsiConsole.MarkupLine("[dim italic]Made by Jonas[/]");
 AnsiConsole.WriteLine("\n");
 
 var choice = AnsiConsole.Prompt(new SelectionPrompt<string>().PageSize(10)
