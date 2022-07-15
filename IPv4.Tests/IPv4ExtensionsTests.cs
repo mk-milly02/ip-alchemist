@@ -74,5 +74,16 @@ namespace IPv4.Tests
             // Then
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ShouldPass_GetWildcardMask()
+        {
+            // Given
+            string expected = "0.0.0.255";
+            // When
+            string actual = IPv4Extensions.GetWildcardMask(IPAddress.Parse("255.255.255.0")).ToString();
+            // Then
+            Assert.Equal(expected, actual);
+        }
     }
 }

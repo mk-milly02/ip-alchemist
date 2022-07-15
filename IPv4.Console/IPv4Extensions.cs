@@ -55,6 +55,20 @@ namespace IPv4.Console
             return (new IPAddress(maskBytes), binMask);
         }
 
+        public static IPAddress GetWildcardMask(IPAddress networkMask)
+        {
+            byte[] maskBytes = networkMask.GetAddressBytes();
+
+            byte[] wildcardBytes = new byte[4];
+
+            for (int i = 0; i < maskBytes.Length; i++)
+            {
+                wildcardBytes[i] = (byte)~maskBytes[i];
+            }
+
+            return new IPAddress(wildcardBytes);
+        }
+
         public static IPAddress GetNetworkAddress(IPAddress ip, IPAddress mask)
         {
             byte[] ipBytes = ip.GetAddressBytes();

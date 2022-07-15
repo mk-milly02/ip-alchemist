@@ -11,6 +11,8 @@ namespace IPv4.Console
 
         public string BinaryNetworkMask => IPv4Extensions.GenerateNetworkMask(NetworkBits).binaryMask;
 
+        public string WildcardMask => IPv4Extensions.GetWildcardMask(NetworkMask).ToString();
+
         public int NetworkBits { get; set; }
 
         public IPAddress NetworkAddress => IPv4Extensions.GetNetworkAddress(AvailableAddress, NetworkMask);
@@ -40,6 +42,7 @@ namespace IPv4.Console
             output.AddColumns($"", "[violet]Network Information[/]");
             output.AddRow("[cyan]Network mask[/]", NetworkMask.ToString());
             output.AddRow("[blueviolet]Binary network mask[/]", BinaryNetworkMask);
+            output.AddRow("[navy]Wildcard mask[/]", WildcardMask);
             output.AddRow("Network Bits", "[red]/[/]" + NetworkBits.ToString());
             output.AddRow("[red]Network Address[/]", NetworkAddress.ToString());
             output.AddRow("Broadcast Address", BroadcastAddress.ToString());
