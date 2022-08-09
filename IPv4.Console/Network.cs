@@ -19,11 +19,18 @@ namespace IPv4.Console
 
         public IPAddress BroadcastAddress => IPv4Extensions.GetBroadcastAddress(NetworkAddress, NetworkMask);
 
-        public string Range => IPv4Extensions.GetRange(NetworkAddress, BroadcastAddress);
-
         public uint TotalHosts => IPv4Extensions.TotalNumberOfAddresses(NetworkBits);
 
-        public int TotalValidHosts => (int)(TotalHosts - 2);
+        public int TotalValidHosts
+        {
+            get
+            {
+                int result = (int)(TotalHosts -2);
+                return result < 1 ? 0 : result;
+            }
+        }
+
+        public string Range => IPv4Extensions.GetRange(NetworkAddress, BroadcastAddress, TotalValidHosts);
 
         public List<int> ActualHosts { get; set; }
 
@@ -43,10 +50,10 @@ namespace IPv4.Console
             output.AddRow("[cyan]Network mask[/]", NetworkMask.ToString());
             output.AddRow("[blueviolet]Binary network mask[/]", BinaryNetworkMask);
             output.AddRow("[navy]Wildcard mask[/]", WildcardMask);
-            output.AddRow("Network Bits", "[red]/[/]" + NetworkBits.ToString());
+            output.AddRow("Network Bits (CIDR)", "[red]/[/]" + NetworkBits.ToString());
             output.AddRow("[red]Network Address[/]", NetworkAddress.ToString());
             output.AddRow("Broadcast Address", BroadcastAddress.ToString());
-            output.AddRow("[lime]Addressess(Total)[/]", TotalHosts.ToString());
+            output.AddRow("[lime]Addressess (Total)[/]", TotalHosts.ToString());
             output.AddRow("Valid Hosts", TotalValidHosts.ToString());
             output.AddRow("[blue]Range[/]", $"[yellow]{Range}[/]");
 

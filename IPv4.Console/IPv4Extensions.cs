@@ -119,7 +119,7 @@ namespace IPv4.Console
             return (uint)Math.Pow(2, 32 - networkBits);
         }
 
-        public static string GetRange(IPAddress networkAddress, IPAddress broadcastAddress)
+        public static string GetRange(IPAddress networkAddress, IPAddress broadcastAddress, int validHosts)
         {
             byte[] networkAdBytes = networkAddress.GetAddressBytes();
             byte[] broadcastBytes = broadcastAddress.GetAddressBytes();
@@ -130,7 +130,8 @@ namespace IPv4.Console
             IPAddress first = new(networkAdBytes);
             IPAddress last = new(broadcastBytes);
 
-            return first.ToString() + " ~ " + last.ToString();
+            return validHosts > 0 ? first.ToString() + " ~ " + last.ToString() 
+                                   : networkAddress.ToString() + " ~ " + networkAddress.ToString();
         }
 
         public static bool ValidateNumberOfSubnets(string number)
