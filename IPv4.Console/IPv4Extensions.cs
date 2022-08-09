@@ -114,9 +114,9 @@ namespace IPv4.Console
             return broadcastAddress;
         }
 
-        public static int TotalNumberOfAddresses(int networkBits)
+        public static uint TotalNumberOfAddresses(int networkBits)
         {
-            return (int)Math.Pow(2, 32 - networkBits);
+            return (uint)Math.Pow(2, 32 - networkBits);
         }
 
         public static string GetRange(IPAddress networkAddress, IPAddress broadcastAddress)

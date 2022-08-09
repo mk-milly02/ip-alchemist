@@ -2,9 +2,6 @@ using IPv4.Console;
 using System.Collections.Generic;
 using System.Net;
 using Xunit;
-using System.Text;
-using System.Linq;
-using System;
 
 namespace IPv4.Tests
 {
@@ -82,6 +79,17 @@ namespace IPv4.Tests
             string expected = "0.0.0.255";
             // When
             string actual = IPv4Extensions.GetWildcardMask(IPAddress.Parse("255.255.255.0")).ToString();
+            // Then
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void MaxTest_TotalNumberOfAddresses()
+        {
+            // Given
+            uint expected = 2147483648;
+            // When
+            uint actual = IPv4Extensions.TotalNumberOfAddresses(1);
             // Then
             Assert.Equal(expected, actual);
         }

@@ -21,9 +21,9 @@ namespace IPv4.Console
 
         public string Range => IPv4Extensions.GetRange(NetworkAddress, BroadcastAddress);
 
-        public int TotalHosts => IPv4Extensions.TotalNumberOfAddresses(NetworkBits);
+        public uint TotalHosts => IPv4Extensions.TotalNumberOfAddresses(NetworkBits);
 
-        public int TotalValidHosts => TotalHosts - 2;
+        public int TotalValidHosts => (int)(TotalHosts - 2);
 
         public List<int> ActualHosts { get; set; }
 
