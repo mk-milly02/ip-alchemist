@@ -11,7 +11,7 @@ namespace IPv4.Console
             if (int.TryParse(prefixLength, out _))
             {
                 var x = int.Parse(prefixLength);
-                return x > 1 && x < 32;
+                return x > 0 && x < 33;
             }
             else
             {
