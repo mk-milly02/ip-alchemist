@@ -26,7 +26,7 @@ namespace IPv4.Console
                 .PromptStyle(new Style(Color.Chartreuse3))
                 .Validate(length => IPv4Extensions.ValidatePrefixLength(length)
                 ? ValidationResult.Success()
-                : ValidationResult.Error("[red]! A prefix length must be between 1 and 32[/]")));
+                : ValidationResult.Error("[red]! The prefix length must be between 0 and 33[/]")));
 
             return int.Parse(length);
         }
