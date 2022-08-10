@@ -22,7 +22,7 @@ namespace IPv4.Console
         static int AskForPrefixLength()
         {
             var length = AnsiConsole.Prompt(
-                new TextPrompt<string>("[lime]?[/] Enter the prefix lenght [blue]/network mask[/]: ")
+                new TextPrompt<string>("[lime]?[/] Enter the prefix length [blue]/network mask[/]: ")
                 .PromptStyle(new Style(Color.Chartreuse3))
                 .Validate(length => IPv4Extensions.ValidatePrefixLength(length)
                 ? ValidationResult.Success()
@@ -64,7 +64,7 @@ namespace IPv4.Console
             return output;
         }
 
-        public static void Run()
+        public static void VariedHosts()
         {
             Network = new()
             {

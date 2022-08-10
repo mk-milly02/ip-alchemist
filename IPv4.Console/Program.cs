@@ -21,8 +21,8 @@ switch (choice)
         BasicAddressing.Run();
         break;
 
-    case "IP Subnetting":
-        IPSubnetting.Run();
+    case "Varied hosts":
+        IPSubnetting.VariedHosts();
         break;
 
     default:
