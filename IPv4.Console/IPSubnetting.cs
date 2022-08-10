@@ -3,11 +3,11 @@ using System.Net;
 
 namespace IPv4.Console
 {
-    public class IPSubnetting
+    public static class IPSubnetting
     {
         private static Network Network { get; set; }
 
-        static string AskForAvailableIPAddress()
+        static IPAddress AskForAvailableIPAddress()
         {
             var ip = AnsiConsole.Prompt(
                 new TextPrompt<string>("[lime]?[/] Enter any IP Address in the network [blue]eg. 196.128.0.4[/]: ")
@@ -16,7 +16,7 @@ namespace IPv4.Console
                 ? ValidationResult.Success()
                 : ValidationResult.Error("[red]! This is not a vaild IP address.[/]")));
 
-            return ip;
+            return IPAddress.Parse(ip);
         }
 
         static int AskForPrefixLength()
@@ -64,14 +64,40 @@ namespace IPv4.Console
             return output;
         }
 
+        static readonly Action<Network> GetUniformHosts = (network) =>
+        {
+            int numberOfSubnets = AskForNumberOfSubnets();
+            int uniformHosts = (int)(network.TotalHosts / numberOfSubnets);
+            List<int> output = new();
+
+            for (int i = 0; i < numberOfSubnets; i++)
+            {
+                output.Add(uniformHosts);
+            }
+
+            network.ActualHosts = output;
+        };
+
         public static void VariedHosts()
         {
             Network = new()
             {
-                AvailableAddress = IPAddress.Parse(AskForAvailableIPAddress()),
+                AvailableAddress = AskForAvailableIPAddress(),
                 NetworkBits = AskForPrefixLength(),
                 ActualHosts = AskForNumberOfHosts()
             };
+            Network.Tabulate();
+            Network.Subnet();
+        }
+
+        public static void UniformHosts()
+        {
+            Network = new()
+            {
+                AvailableAddress = AskForAvailableIPAddress(),
+                NetworkBits = AskForPrefixLength()
+            };
+            GetUniformHosts(Network);
             Network.Tabulate();
             Network.Subnet();
         }

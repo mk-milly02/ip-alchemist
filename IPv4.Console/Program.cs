@@ -25,6 +25,10 @@ switch (choice)
         IPSubnetting.VariedHosts();
         break;
 
+    case "Uniform hosts":
+        IPSubnetting.UniformHosts();
+        break;
+        
     default:
         Environment.Exit(0);
         break;
