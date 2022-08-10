@@ -150,7 +150,7 @@ namespace IPv4.Console
         {
             if (int.TryParse(number, out int x))
             {
-                return x > 0;
+                return x > 0 && x < Math.Pow(2,32);
             }
             else
             {
