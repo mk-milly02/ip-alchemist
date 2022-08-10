@@ -362,3 +362,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 IPv4.Console/Test.cs
+/IPv4.Package
