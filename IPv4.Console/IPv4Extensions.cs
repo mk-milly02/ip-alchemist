@@ -7,16 +7,7 @@ namespace IPv4.Console
     {
         public static bool ValidatePrefixLength(string prefixLength)
         {
-            //TODO: Refactor this
-            if (int.TryParse(prefixLength, out _))
-            {
-                var x = int.Parse(prefixLength);
-                return x > 0 && x < 33;
-            }
-            else
-            {
-                return false;
-            }
+            return int.TryParse(prefixLength, out int x) && x > 0 && x < 33;
         }
 
         public static bool IsIPAddress(string ip)

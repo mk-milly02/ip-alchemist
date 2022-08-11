@@ -93,5 +93,16 @@ namespace IPv4.Tests
             // Then
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData("12")]
+        [InlineData("2")]
+        [InlineData("10")]
+        [InlineData("32")]
+        [InlineData("24")]
+        public void IsAValidPrefixLength(string prefixLength)
+        {
+            Assert.True(IPv4Extensions.ValidatePrefixLength(prefixLength));
+        }
     }
 }
