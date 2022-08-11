@@ -12,7 +12,7 @@ namespace IPv4.Console
             var ip = AnsiConsole.Prompt(
                 new TextPrompt<string>("[lime]?[/] Enter any IP Address in the network [blue]eg. 196.128.0.4[/]: ")
                 .PromptStyle(new Style(Color.Aqua))
-                .Validate(ip => IPv4Extensions.IsIPAddress(ip)
+                .Validate(ip => IPv4Extensions.IsAnIPAddress(ip)
                 ? ValidationResult.Success()
                 : ValidationResult.Error("[red]! This is not a vaild IP address.[/]")));
 

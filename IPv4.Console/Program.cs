@@ -34,4 +34,5 @@ switch (choice)
         break;
 }
 
+AnsiConsole.MarkupLine("[chartreuse1]Press any key to exit...[/]");
 Console.ReadKey();
