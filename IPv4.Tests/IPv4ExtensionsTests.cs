@@ -31,11 +31,25 @@ namespace IPv4.Tests
 
         [Theory]
         [InlineData("12.0.0.1")]
-        [InlineData("0.200.100.8")]
+        [InlineData("192.168.1.2")]
         [InlineData("198.25.5.1")]
-        public void IsAValidIPAddress(string ip)
+        [InlineData("96.45.45.45")]
+        [InlineData("10.0.61.50")]
+        public void TrueValues_IsAValidIPAddress(string ip)
         {
-            Assert.True(IPv4Extensions.IsIPAddress(ip));
+            Assert.True(IPv4Extensions.IsAnIPAddress(ip));
+        }
+
+        [Theory]
+        [InlineData("12333333")]
+        [InlineData("-23.34.77.67")]
+        [InlineData("ab.cd.ef.gh")]
+        [InlineData("....")]
+        [InlineData("265.34.342.2")]
+        [InlineData("0.200.100.8")]
+        public void FalseValues_IsValidIPAddress(string ip)
+        {
+            Assert.False(IPv4Extensions.IsAnIPAddress(ip));
         }
 
         [Fact]

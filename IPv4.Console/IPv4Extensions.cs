@@ -10,16 +10,24 @@ namespace IPv4.Console
             return int.TryParse(prefixLength, out int x) && x > 0 && x < 33;
         }
 
-        public static bool IsIPAddress(string ip)
+        public static bool IsAnIPAddress(string ip)
         {
-            if (ip.Length < 7)
+            string[] octects = ip.Split('.');
+
+            if (octects.Length == 4)
             {
-                return false;
+                for (int i = 0; i < octects.Length; i++)
+                {
+                    if(!int.TryParse(octects[i], out int octect) || octect < 0 || octect > 255 || (i == 0 && octect == 0))
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
             }
-            else
-            {
-                return IPAddress.TryParse(ip, out _);
-            }
+            
+            return false;
         }
 
         public static (IPAddress decimalMask, string binaryMask) GenerateNetworkMask(int networkBits)
