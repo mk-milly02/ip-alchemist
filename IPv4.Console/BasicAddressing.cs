@@ -10,11 +10,11 @@ namespace IPv4.Console
         static string AskForAvailableIPAddress()
         {
             var ip = AnsiConsole.Prompt(
-                new TextPrompt<string>("[lime]?[/] Enter any IP Address in the network [blue]eg. 196.128.0.4[/]: ")
+                new TextPrompt<string>("[lime]?[/] Enter the IP Address [dodgerblue2 bold]<eg. [italic]196.128.0.4[/]>[/]: ")
                 .PromptStyle(new Style(Color.Aqua))
                 .Validate(ip => IPv4Extensions.IsAnIPAddress(ip)
                 ? ValidationResult.Success()
-                : ValidationResult.Error("[red]! This is not a vaild IP address.[/]")));
+                : ValidationResult.Error("[red]! This is not a vaild IPv4 address.[/]")));
 
             return ip;
         }

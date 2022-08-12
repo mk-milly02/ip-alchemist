@@ -1,17 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Reflection;
+using System.Text;
 using IPv4.Console;
 using Spectre.Console;
 
 Console.Title = "IPv4 Calculator";
 
+Console.OutputEncoding = Encoding.UTF8;
+
 AnsiConsole.Write(new FigletText("IPv4 Calculator").Color(Color.Orange3));
 
-AnsiConsole.MarkupLine("[dim italic]Made by mk-milly02[/]");
+var version = Assembly.GetExecutingAssembly().GetName().Version;
 
-AnsiConsole.WriteLine("\n");
+AnsiConsole.MarkupLine("[italic]version {0}[/]".PadLeft(110), version);
 
 var choice = AnsiConsole.Prompt(new SelectionPrompt<string>().PageSize(10)
-    .Title("[lime]?[/] What do you [green]want to do[/]?")
+    .Title("[lime]?[/] [bold]What do you [green]want to do[/]?[/]")
     .AddChoices("Network Overview")
     .AddChoiceGroup("IP Subnetting", new[] {"Uniform hosts", "Varied hosts"}));
 
@@ -34,5 +38,6 @@ switch (choice)
         break;
 }
 
-AnsiConsole.MarkupLine("[chartreuse1]Press any key to exit...[/]");
+AnsiConsole.Markup("[chartreuse1]Press any key to exit...[/]");
+
 Console.ReadKey();
