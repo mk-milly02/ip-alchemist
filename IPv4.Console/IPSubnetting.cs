@@ -10,11 +10,11 @@ namespace IPv4.Console
         static IPAddress AskForAvailableIPAddress()
         {
             var ip = AnsiConsole.Prompt(
-                new TextPrompt<string>("[lime]?[/] Enter any IP Address in the network [blue]eg. 196.128.0.4[/]: ")
+                new TextPrompt<string>("[lime]?[/] Enter the IP Address [blue bold]<eg. [italic]196.128.0.4[/]>[/]: ")
                 .PromptStyle(new Style(Color.Aqua))
                 .Validate(ip => IPv4Extensions.IsAnIPAddress(ip)
                 ? ValidationResult.Success()
-                : ValidationResult.Error("[red]! This is not a vaild IP address.[/]")));
+                : ValidationResult.Error("[red]! This is not a vaild IPv4 address.[/]")));
 
             return IPAddress.Parse(ip);
         }
@@ -26,7 +26,7 @@ namespace IPv4.Console
                 .PromptStyle(new Style(Color.Chartreuse3))
                 .Validate(length => IPv4Extensions.ValidatePrefixLength(length)
                 ? ValidationResult.Success()
-                : ValidationResult.Error("[red]! A prefix length must be between 1 and 32[/]")));
+                : ValidationResult.Error("[red]! A prefix length must be between 0 and 33[/]")));
 
             return int.Parse(length);
         }
