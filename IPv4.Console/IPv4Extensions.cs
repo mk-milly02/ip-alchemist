@@ -18,7 +18,7 @@ namespace IPv4.Console
             {
                 for (int i = 0; i < octects.Length; i++)
                 {
-                    if(!int.TryParse(octects[i], out int octect) || octect < 0 || octect > 255 || (i == 0 && octect == 0))
+                    if(!int.TryParse(octects[i], out int octect) || octect < 0 || octect > 255)
                     {
                         return false;
                     }

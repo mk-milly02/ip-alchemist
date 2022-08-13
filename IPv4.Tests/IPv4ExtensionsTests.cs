@@ -35,6 +35,7 @@ namespace IPv4.Tests
         [InlineData("198.25.5.1")]
         [InlineData("96.45.45.45")]
         [InlineData("10.0.61.50")]
+        [InlineData("0.0.0.0")]
         public void TrueValues_IsAValidIPAddress(string ip)
         {
             Assert.True(IPv4Extensions.IsAnIPAddress(ip));
@@ -46,8 +47,8 @@ namespace IPv4.Tests
         [InlineData("ab.cd.ef.gh")]
         [InlineData("....")]
         [InlineData("265.34.342.2")]
-        [InlineData("0.200.100.8")]
-        public void FalseValues_IsValidIPAddress(string ip)
+        [InlineData("130.200.100.8/24")]
+        public void FalseValues_IsAValidIPAddress(string ip)
         {
             Assert.False(IPv4Extensions.IsAnIPAddress(ip));
         }
