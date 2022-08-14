@@ -8,7 +8,7 @@ namespace IPv4.Tests
     public class IPv4ExtensionsTests
     {
         [Fact]
-        public void ShouldPass_GenerateNetworkMaskInDecimal()
+        public void GenerateNetworkMaskInDecimalTest()
         {
             // Given
             string expected = "255.255.255.192";
@@ -19,7 +19,7 @@ namespace IPv4.Tests
         }
 
         [Fact]
-        public void ShouldPass_GenerateNetworkMaskInBinary()
+        public void GenerateNetworkMaskInBinaryTest()
         {
             // Given
             string expected = "11111111.11111111.11111111.11000000";
@@ -36,7 +36,7 @@ namespace IPv4.Tests
         [InlineData("96.45.45.45")]
         [InlineData("10.0.61.50")]
         [InlineData("0.0.0.0")]
-        public void TrueValues_IsAValidIPAddress(string ip)
+        public void TrueValues_IsAValidIPAddressTest(string ip)
         {
             Assert.True(IPv4Extensions.IsAnIPAddress(ip));
         }
@@ -48,25 +48,25 @@ namespace IPv4.Tests
         [InlineData("....")]
         [InlineData("265.34.342.2")]
         [InlineData("130.200.100.8/24")]
-        public void FalseValues_IsAValidIPAddress(string ip)
+        public void FalseValues_IsAValidIPAddressTest(string ip)
         {
             Assert.False(IPv4Extensions.IsAnIPAddress(ip));
         }
 
         [Fact]
-        public void ShouldPass_ValidateNumberOfSubnets()
+        public void ValidateNumberOfSubnetsTest()
         {
             Assert.True(IPv4Extensions.ValidateNumberOfSubnets("32"));
         }
 
         [Fact]
-        public void ShouldPass_ValidateNumberOfHosts()
+        public void ValidateNumberOfHostsTest()
         {
             Assert.False(IPv4Extensions.ValidateNumberOfHosts("12022028287383772"));
         }
 
         [Fact]
-        public void ShouldPass_FindPowersOfTwo()
+        public void FindPowersOfTwoTest()
         {
             // Given
             List<PowerOfTwo> expected = new() { new(4, 16), new(5, 32), new(5, 32), new(6, 64), new(7, 128) };
@@ -77,7 +77,7 @@ namespace IPv4.Tests
         }
 
         [Fact]
-        public void ShouldPass_GetNextAvailableIP()
+        public void GetNextAvailableIPTest()
         {
             // Given
             string expected = "198.126.0.1";
@@ -88,7 +88,7 @@ namespace IPv4.Tests
         }
 
         [Fact]
-        public void ShouldPass_GetWildcardMask()
+        public void GetWildcardMaskTest()
         {
             // Given
             string expected = "0.0.0.255";
@@ -115,7 +115,7 @@ namespace IPv4.Tests
         [InlineData("10")]
         [InlineData("32")]
         [InlineData("24")]
-        public void IsAValidPrefixLength(string prefixLength)
+        public void IsAValidPrefixLengthTest(string prefixLength)
         {
             Assert.True(IPv4Extensions.ValidatePrefixLength(prefixLength));
         }
