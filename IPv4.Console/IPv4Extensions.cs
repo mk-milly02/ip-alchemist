@@ -137,7 +137,7 @@ namespace IPv4.Console
         {
             if (int.TryParse(number, out int x))
             {
-                return x > 1;
+                return x > 0 && x < 33;
             }
             else
             {

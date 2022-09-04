@@ -3,7 +3,7 @@ using System.Net;
 
 namespace IPv4.Console
 {
-    public static class BasicAddressing
+    public static class NetworkOverview
     {
         private static Network Network { get; set; }
 

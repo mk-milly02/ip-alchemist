@@ -19,14 +19,15 @@ internal class Program
         AnsiConsole.MarkupLine("[italic]version {0}[/]".PadLeft(110), version);
 
         var choice = AnsiConsole.Prompt(new SelectionPrompt<string>().PageSize(10)
-            .Title("[lime]?[/] [bold]What do you [green]want to do[/]?[/]")
+            .Title("[lime]?[/] [bold]Select from the [blue]menu[/]:[/]")
             .AddChoices("Network Overview")
-            .AddChoiceGroup("IP Subnetting", new[] { "Uniform hosts", "Varied hosts" }));
+            .AddChoiceGroup("IP Subnetting", new[] { "Uniform hosts", "Varied hosts" })
+            .AddChoices("Exit"));
 
         switch (choice)
         {
             case "Network Overview":
-                BasicAddressing.Run();
+                NetworkOverview.Run();
                 break;
 
             case "Varied hosts":
@@ -37,9 +38,12 @@ internal class Program
                 IPSubnetting.UniformHosts();
                 break;
 
-            default:
+            case "Exit":
                 Environment.Exit(0);
                 break;
+
+            default:
+                return;
         }
 
         AnsiConsole.Markup("\n[chartreuse1]Press [lightslateblue]M[/] for [lightslateblue]menu[/] or [red]E[/] to [red]exit[/]...[/]");
