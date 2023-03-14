@@ -10,6 +10,20 @@ Console.OutputEncoding = Encoding.UTF8;
 AnsiConsole.Write(new FigletText("ip-alchemist-cli").Color(Color.DarkSlateGray2));
 
 var version = Assembly.GetExecutingAssembly().GetName().Version;
-AnsiConsole.MarkupLine("[italic]version {0}[/]".PadLeft(110), version);
+AnsiConsole.MarkupLine($"[italic]version {version}[/]".PadLeft(115));
+
+var choice = AnsiConsole.Prompt(new SelectionPrompt<string>().PageSize(10)
+    .Title("[lime]?[/] [bold]Select from the [blue]menu[/]:[/]")
+    .AddChoices("ipv4-utils"));
+
+switch (choice)
+{
+    case "ipv4-utils":
+
+        break;
+
+    default:
+        return;
+}
 
 Console.ReadLine();
