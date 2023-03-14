@@ -102,9 +102,9 @@ namespace IPv4.Tests
         public void MaxTest_TotalNumberOfAddresses()
         {
             // Given
-            uint expected = 2147483648;
+            uint expected = 4294967296;
             // When
-            uint actual = IPv4Extensions.TotalNumberOfAddresses(1);
+            uint actual = IPv4Extensions.TotalNumberOfAddresses(0);
             // Then
             Assert.Equal(expected, actual);
         }

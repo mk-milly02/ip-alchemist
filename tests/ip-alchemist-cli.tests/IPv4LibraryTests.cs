@@ -1,3 +1,4 @@
+using System.Net;
 using ip_alchemist_cli.libs;
 using Xunit;
 
@@ -29,4 +30,119 @@ public class IPv4LibraryTests
         Assert.False(IPv4Library.ValidateIPAddress(ip));
     }
 
+    [Theory]
+    [InlineData("12")]
+    [InlineData("2")]
+    [InlineData("10")]
+    [InlineData("32")]
+    [InlineData("24")]
+    [InlineData("0")]
+    public void ValidatePrefixLengthTest(string prefixLength)
+    {
+        Assert.True(IPv4Library.ValidatePrefixLength(prefixLength));
+    }
+
+    [Fact]
+    public void GenerateDecimalNetworkMaskTest()
+    {
+        // Given
+        string expected = "255.255.255.192";
+        // When
+        string actual = IPv4Library.GenerateNetworkMask(26).decimalMask.ToString();
+        // Then
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void GenerateBinaryNetworkMaskTest()
+    {
+        // Given
+        string expected = "11111111.11111111.11111111.11110000";
+        // When
+        string actual = IPv4Library.GenerateNetworkMask(28).binaryMask;
+        // Then
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void GenerateWildcardMaskTest()
+    {
+        // Given
+        string expected = "0.0.255.255";
+        // When
+        string actual = IPv4Library.GenerateWildcardMask(IPAddress.Parse("255.255.0.0")).ToString();
+        // Then
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void MaximumTest_TotalNumberOfAddresses()
+    {
+        // Given
+        long expected = 4294967296;
+        // When
+        long actual = IPv4Library.TotalNumberOfAddresses(0);
+        // Then
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void GenerateNetworkAddressTest()
+    {
+        // Given
+        IPAddress expected = IPAddress.Parse("192.168.1.0");
+        // When
+        IPAddress actual = IPv4Library.GenerateNetworkAddress(
+            IPAddress.Parse("192.168.1.56"), IPAddress.Parse("255.255.255.0"));
+        // Then
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void GenerateBroadcastAddressTest()
+    {
+        // Given
+        IPAddress expected = IPAddress.Parse("192.168.1.255");
+        // When
+        IPAddress actual = IPv4Library.GenerateBroadcastAddress(
+            IPAddress.Parse("192.168.1.0"), IPAddress.Parse("255.255.255.0"));
+        // Then
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void TotalNumberOfAddressesTest()
+    {
+        // Given
+        long expected = 256;
+        // When
+        long actual = IPv4Library.TotalNumberOfAddresses(24);
+        // Then
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void GenerateAddressRangeTest()
+    {
+        // Given
+        string expected = "192.168.1.1 ~ 192.168.1.254";
+        // When
+        string actual = IPv4Library.GenerateAddressRange(
+            IPAddress.Parse("192.168.1.0"), IPAddress.Parse("192.168.1.255"), 254);
+        // Then
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void Null_GenerateAddressRangeTest()
+    {
+        // Given
+        string expected = "There are no valid addresses.";
+        // When
+        IPAddress netAdd = IPv4Library.GenerateNetworkAddress(IPAddress.Parse("192.168.1.2"), IPAddress.Parse("255.255.255.254"));
+        IPAddress broadAdd = IPv4Library.GenerateBroadcastAddress(netAdd, IPAddress.Parse("255.255.255.254"));
+        string actual = IPv4Library.GenerateAddressRange(netAdd, broadAdd, 0);
+        // Then
+        Assert.Equal(expected, actual);
+    }
 }

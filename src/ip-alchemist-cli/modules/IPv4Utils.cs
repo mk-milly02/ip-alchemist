@@ -1,10 +1,13 @@
 using ip_alchemist_cli.libs;
+using ip_alchemist_cli.models;
 using Spectre.Console;
 
 namespace ip_alchemist_cli.modules
 {
     public static class IPv4Utils
     {
+        public static Network? Network { get; set; }
+
         static string PromptForIPAddress()
         {
             var ipAddress = AnsiConsole.Prompt(
@@ -17,14 +20,22 @@ namespace ip_alchemist_cli.modules
             return ipAddress;
         }
 
-        static void Execute()
+        static int PromptForPrefixLength()
         {
-            Network = new()
-            {
-                AvailableAddress = IPAddress.Parse(AskForAvailableIPAddress()),
-                NetworkBits = AskForPrefixLength()
-            };
-            Network.Tabulate();
+            var length = AnsiConsole.Prompt(
+                new TextPrompt<string>("[lime]?[/] Enter the prefix length [blue]/network bits[/]: ")
+                .PromptStyle(new Style(Color.Chartreuse3))
+                .Validate(length => IPv4Library.ValidatePrefixLength(length)
+                ? ValidationResult.Success()
+                : ValidationResult.Error("[red]! The prefix length must be >= 0 < 33[/]")));
+
+            return int.Parse(length);
+        }
+
+        public static void Execute()
+        {
+            Network = new(PromptForIPAddress(), PromptForPrefixLength());
+            Network.Display();
         }
     }
 }
