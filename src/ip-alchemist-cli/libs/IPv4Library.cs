@@ -7,13 +7,13 @@ namespace ip_alchemist_cli.libs
     {
         public static bool ValidateIPAddress(string ip)
         {
-            string[] octects = ip.Split('.');
+            string[] octets = ip.Split('.');
 
-            if (octects.Length == 4)
+            if (octets.Length == 4)
             {
-                for (int i = 0; i < octects.Length; i++)
+                for (int i = 0; i < octets.Length; i++)
                 {
-                    if (!int.TryParse(octects[i], out int octect) || octect < 0 || octect > 255)
+                    if (!int.TryParse(octets[i], out int octect) || octect < 0 || octect > 255)
                     {
                         return false;
                     }
@@ -37,18 +37,18 @@ namespace ip_alchemist_cli.libs
             //Set network bits to ones
             builder.Append('1', prefixLength);
 
-            //Set host bits to zero
+            //Set host bits to zeros
             builder.Append('0', 32 - prefixLength);
 
-            var octects = builder.ToString().Chunk(8).ToList();
+            var octets = builder.ToString().Chunk(8).ToList();
 
             byte[] maskBytes = new byte[4];
 
-            string binaryMask = new(new string(octects[0]) + "." + new string(octects[1]) + "." + new string(octects[2]) + "." + new string(octects[3]));
+            string binaryMask = new(new string(octets[0]) + "." + new string(octets[1]) + "." + new string(octets[2]) + "." + new string(octets[3]));
 
             for (int i = 0; i < 4; i++)
             {
-                maskBytes[i] = (byte)Convert.ToInt32(new string(octects[i]), 2);
+                maskBytes[i] = (byte)Convert.ToInt32(new string(octets[i]), 2);
             }
 
             return (new IPAddress(maskBytes), binaryMask);
@@ -135,6 +135,27 @@ namespace ip_alchemist_cli.libs
             }
 
             return "There are no valid addresses.";
+        }
+
+        public static string GetAddressType(IPAddress ip)
+        {
+            byte[] ipBytes = ip.GetAddressBytes();
+            int[] octets = new int[4];
+
+            for (int i = 0; i < ipBytes.Length; i++)
+            {
+                octets[i] = Convert.ToInt32(ipBytes[i]);
+            }
+
+            return octets[0] switch
+            {
+                10 => "Private",
+                172 when octets[1] >= 16 && octets[1] <= 31 => "Private",
+                192 when octets[1] == 168 => "Private",
+                127 => "Loopback",
+                169 when octets[1] == 254 => "Link-Local",
+                _ => "Public",
+            };
         }
     }
 }

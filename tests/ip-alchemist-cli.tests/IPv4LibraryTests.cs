@@ -145,4 +145,40 @@ public class IPv4LibraryTests
         // Then
         Assert.Equal(expected, actual);
     }
+
+    [Theory]
+    [InlineData("8.8.8.8")]
+    [InlineData("225.0.0.4")]
+    [InlineData("41.209.2.8")]
+    [InlineData("0.100.0.2")]
+    [InlineData("172.32.48.18")]
+    [InlineData("192.178.0.1")]
+    public void ValidPublicAddresses_GetAddressTypeTest(string ipAddress)
+    {
+        Assert.Equal("Public", IPv4Library.GetAddressType(IPAddress.Parse(ipAddress)));
+    }
+
+    [Theory]
+    [InlineData("10.8.8.8")]
+    [InlineData("172.16.0.4")]
+    [InlineData("172.25.2.8")]
+    [InlineData("192.168.1.2")]
+    [InlineData("10.255.48.18")]
+    [InlineData("192.168.0.1")]
+    public void ValidPrivateAddresses_GetAddressTypeTest(string ipAddress)
+    {
+        Assert.Equal("Private", IPv4Library.GetAddressType(IPAddress.Parse(ipAddress)));
+    }
+
+    [Fact]
+    public void Link_Local_GetAddressTypeTest()
+    {
+        Assert.Equal("Link-Local", IPv4Library.GetAddressType(IPAddress.Parse("169.254.1.3")));
+    }
+
+    [Fact]
+    public void Loopback_GetAddressType()
+    {
+        Assert.Equal("Loopback", IPv4Library.GetAddressType(IPAddress.Parse("127.0.0.1")));
+    }
 }
