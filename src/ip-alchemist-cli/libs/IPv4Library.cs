@@ -157,5 +157,26 @@ namespace ip_alchemist_cli.libs
                 _ => "Public",
             };
         }
+
+        public static string GetAddressClass(IPAddress ip)
+        {
+            byte[] ipBytes = ip.GetAddressBytes();
+            int[] octets = new int[4];
+
+            for (int i = 0; i < ipBytes.Length; i++)
+            {
+                octets[i] = Convert.ToInt32(ipBytes[i]);
+            }
+
+            return octets[0] switch
+            {
+                >= 1 and <= 126 => "Class A",
+                >= 128 and <= 191 => "Class B",
+                >= 192 and <= 223 => "Class C",
+                >= 224 and <= 239 => "Class D",
+                >= 240 and <= 255 => "Class E",
+                _ => "N/A",
+            };
+        }
     }
 }
