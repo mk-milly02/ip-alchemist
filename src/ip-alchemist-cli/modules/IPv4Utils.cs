@@ -11,8 +11,8 @@ namespace ip_alchemist_cli.modules
         static string PromptForIPAddress()
         {
             var ipAddress = AnsiConsole.Prompt(
-                new TextPrompt<string>("[lime]?[/] Enter the IP Address you want to work with [dodgerblue2 bold]<eg. [italic]192.168.0.1[/]>[/]: ")
-                .PromptStyle(new Style(Color.Aqua))
+                new TextPrompt<string>("[lime]?[/] Enter the IP Address you want to work with [bold]<eg. x.x.x.x>[/]: ")
+                .PromptStyle(new Style(Color.Lime))
                 .Validate(ip => IPv4Library.ValidateIPAddress(ip)
                 ? ValidationResult.Success()
                 : ValidationResult.Error("[red]! This is not a vaild IPv4 address.[/]")));
@@ -23,8 +23,8 @@ namespace ip_alchemist_cli.modules
         static int PromptForPrefixLength()
         {
             var length = AnsiConsole.Prompt(
-                new TextPrompt<string>("[lime]?[/] Enter the prefix length [blue]/network bits[/]: ")
-                .PromptStyle(new Style(Color.Chartreuse3))
+                new TextPrompt<string>("[lime]?[/] Enter the prefix length [bold]/network bits[/]: ")
+                .PromptStyle(new Style(Color.Lime))
                 .Validate(length => IPv4Library.ValidatePrefixLength(length)
                 ? ValidationResult.Success()
                 : ValidationResult.Error("[red]! The prefix length must be >= 0 < 33[/]")));

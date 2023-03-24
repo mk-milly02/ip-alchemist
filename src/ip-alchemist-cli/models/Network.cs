@@ -36,7 +36,7 @@ namespace ip_alchemist_cli.models
             output.AddRow("[cyan]Network mask[/]", NetworkMask.decimalMask.ToString());
             output.AddRow("[blueviolet]Binary network mask[/]", NetworkMask.binaryMask);
             output.AddRow("[navy]Wildcard mask[/]", WildcardMask.ToString());
-            output.AddRow("Network Bits (CIDR)", "[red]/[/]" + PrefixLength);
+            output.AddRow("Prefix Length", "[red]/[/]" + PrefixLength);
             output.AddRow("[red]Network Address[/]", NetworkAddress.ToString());
             output.AddRow("Broadcast Address", BroadcastAddress.ToString());
             output.AddRow("Address Type", AddressType);
