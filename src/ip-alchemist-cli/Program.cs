@@ -19,12 +19,17 @@ internal class Program
 
         var choice = AnsiConsole.Prompt(new SelectionPrompt<string>().PageSize(10)
             .Title("[lime]?[/] [bold]Select from the [blue]menu[/]:[/]")
-            .AddChoices("ipv4-utils"));
+            .AddChoices("ipv4-utils")
+            .AddChoiceGroup("Subnetting", new[] { "Fixed Length", "Variable Length Subnet Mask (VLSM)" }));
 
         switch (choice)
         {
             case "ipv4-utils":
                 IPv4Utils.Execute();
+                break;
+
+            case "Fixed Length":
+                FLSM.Execute();
                 break;
 
             default:

@@ -226,4 +226,26 @@ public class IPv4LibraryTests
     {
         Assert.Equal("Class E", IPv4Library.GetAddressClass(IPAddress.Parse(ip)));
     }
+
+    [Theory]
+    [InlineData("20", 24)]
+    [InlineData("200", 16)]
+    [InlineData("2000", 12)]
+    [InlineData("20000", 8)]
+    [InlineData("2000000", 8)]
+    public void Valid_ValidateNumberOfSubnetHosts(string hosts, int prefixLength)
+    {
+        Assert.True(IPv4Library.ValidateNumberOfHosts(hosts, prefixLength));
+    }
+
+    [Theory]
+    [InlineData("20", 30)]
+    [InlineData("16777217", 8)]
+    [InlineData("2000", 24)]
+    [InlineData("wde", 8)]
+    [InlineData("1", 8)]
+    public void InValid_ValidateNumberOfSubnetHosts(string hosts, int prefixLength)
+    {
+        Assert.False(IPv4Library.ValidateNumberOfHosts(hosts, prefixLength));
+    }
 }
