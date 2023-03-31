@@ -137,7 +137,7 @@ namespace ip_alchemist_cli.libs
             return "There are no valid addresses.";
         }
 
-        public static string GetAddressType(IPAddress ip)
+        public static string GetNetworkType(IPAddress ip)
         {
             byte[] ipBytes = ip.GetAddressBytes();
             int[] octets = new int[4];
@@ -181,7 +181,7 @@ namespace ip_alchemist_cli.libs
 
         public static bool ValidateNumberOfHostsPerSubnet(string hosts, int prefixLength)
         {
-            //The minimum number of hosts per subnet is two i.e network and broadcast address.
+            //The minimum number of ip addresses per subnet is two i.e network and broadcast address.
             return int.TryParse(hosts, out int x) && x > 2 && x < (Math.Pow(2, 32 - prefixLength) - 2);
         }
     }

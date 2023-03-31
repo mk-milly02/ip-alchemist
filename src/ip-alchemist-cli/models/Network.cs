@@ -21,7 +21,7 @@ namespace ip_alchemist_cli.models
         public long TotalHosts => IPv4Library.TotalNumberOfAddresses(PrefixLength);
         public long TotalValidHosts => (TotalHosts - 2) < 1 ? 0 : TotalHosts - 2;
         public string AddressRange => IPv4Library.GenerateAddressRange(NetworkAddress, BroadcastAddress, TotalValidHosts);
-        public string AddressType => IPv4Library.GetAddressType(Address!);
+        public string NetworkType => IPv4Library.GetNetworkType(Address!);
 
         #region Methods
         public virtual void Display()
@@ -39,13 +39,14 @@ namespace ip_alchemist_cli.models
             output.AddRow("Prefix Length", "[red]/[/]" + PrefixLength);
             output.AddRow("[red]Network Address[/]", NetworkAddress.ToString());
             output.AddRow("Broadcast Address", BroadcastAddress.ToString());
-            output.AddRow("Address Type", AddressType);
+            output.AddRow("Network Type", NetworkType);
             output.AddRow("[lime]Addressess (Total)[/]", TotalHosts.ToString());
             output.AddRow("Valid Hosts", TotalValidHosts.ToString());
             output.AddRow("[blue]Range[/]", $"[yellow]{AddressRange}[/]");
 
             AnsiConsole.Write(output);
         }
+
         #endregion
     }
 }
