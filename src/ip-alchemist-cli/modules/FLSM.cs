@@ -37,7 +37,7 @@ public static class FLSM
         var numberOfHosts = AnsiConsole.Prompt(
             new TextPrompt<string>("[lime]?[/] Enter the number of hosts [bold]per[/] subnet: ")
             .PromptStyle(new Style(Color.Lime))
-            .Validate(hosts => IPv4Library.ValidateNumberOfHosts(hosts, prefixLength)
+            .Validate(hosts => IPv4Library.ValidateNumberOfHostsPerSubnet(hosts, prefixLength)
             ? ValidationResult.Success()
             : ValidationResult.Error("[red]! Invalid number of hosts per subnet[/]"))
         );

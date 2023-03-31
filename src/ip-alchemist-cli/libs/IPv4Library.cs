@@ -179,10 +179,10 @@ namespace ip_alchemist_cli.libs
             };
         }
 
-        public static bool ValidateNumberOfHosts(string hosts, int prefixLength)
+        public static bool ValidateNumberOfHostsPerSubnet(string hosts, int prefixLength)
         {
             //The minimum number of hosts per subnet is two i.e network and broadcast address.
-            return int.TryParse(hosts, out int x) && x > 2 && x < Math.Pow(2, 32 - prefixLength);
+            return int.TryParse(hosts, out int x) && x > 2 && x < (Math.Pow(2, 32 - prefixLength) - 2);
         }
     }
 }
