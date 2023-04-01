@@ -233,9 +233,9 @@ public class IPv4LibraryTests
     [InlineData("2000", 12)]
     [InlineData("20000", 8)]
     [InlineData("2000000", 8)]
-    public void Valid_ValidateNumberOfHostsPerSubnet(string hosts, int prefixLength)
+    public void Valid_ValidateNumberOfValidHostsPerSubnet(string hosts, int prefixLength)
     {
-        Assert.True(IPv4Library.ValidateNumberOfHostsPerSubnet(hosts, prefixLength));
+        Assert.True(IPv4Library.ValidateNumberOfValidHostsPerSubnet(hosts, prefixLength));
     }
 
     [Theory]
@@ -243,9 +243,9 @@ public class IPv4LibraryTests
     [InlineData("256", 24)]
     [InlineData("2000", 24)]
     [InlineData("wde", 8)]
-    [InlineData("1", 8)]
-    public void InValid_ValidateNumberOfHostsPerSubnet(string hosts, int prefixLength)
+    [InlineData("255", 24)]
+    public void InValid_ValidateNumberOfValidHostsPerSubnet(string hosts, int prefixLength)
     {
-        Assert.False(IPv4Library.ValidateNumberOfHostsPerSubnet(hosts, prefixLength));
+        Assert.False(IPv4Library.ValidateNumberOfValidHostsPerSubnet(hosts, prefixLength));
     }
 }

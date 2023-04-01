@@ -32,12 +32,12 @@ public static class FLSM
         return int.Parse(length);
     }
 
-    static int PromptForNumberOfHostsPerSubnet(int prefixLength)
+    static int PromptForNumberOfValidHostsPerSubnet(int prefixLength)
     {
         var numberOfHosts = AnsiConsole.Prompt(
             new TextPrompt<string>("[lime]?[/] Enter the number of hosts [bold]per[/] subnet: ")
             .PromptStyle(new Style(Color.Lime))
-            .Validate(hosts => IPv4Library.ValidateNumberOfHostsPerSubnet(hosts, prefixLength)
+            .Validate(hosts => IPv4Library.ValidateNumberOfValidHostsPerSubnet(hosts, prefixLength)
             ? ValidationResult.Success()
             : ValidationResult.Error("[red]! Invalid number of hosts per subnet[/]"))
         );
