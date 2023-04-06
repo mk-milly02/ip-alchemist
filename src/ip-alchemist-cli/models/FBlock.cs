@@ -85,16 +85,7 @@ namespace ip_alchemist_cli.models
                 string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
                             + $"\\{Address!}-{PrefixLength}-{NumberOfSubnets}.csv";
 
-                StreamWriter writer = new(new FileStream(path, FileMode.Create, FileAccess.Write));
-                writer.WriteLine($"Number, Network Mask, Binary Mask, Prefix Length, Network Address, Broadcast Address, Total Hosts, Total Valid Hosts, Address Range");
-
-                foreach (var s in Subnets)
-                {
-                    writer.WriteLine(s.ToString());
-                }
-
-                writer.Close();
-                AnsiConsole.MarkupLine($"\n[blue]![/] Output printed to [link={path}]this file[/]");
+                FileOperations.WriteToCSV(path, Subnets);
             }
         }
     }
