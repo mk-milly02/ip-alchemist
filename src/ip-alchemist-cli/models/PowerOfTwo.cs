@@ -1,4 +1,4 @@
-namespace IPv4.Console
+namespace ip_alchemist_cli.models
 {
     public struct PowerOfTwo
     {
@@ -9,7 +9,6 @@ namespace IPv4.Console
         }
 
         public int Index { get; set; }
-
         public int Power { get; set; }
     }
 }

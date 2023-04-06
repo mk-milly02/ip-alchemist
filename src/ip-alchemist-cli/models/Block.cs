@@ -1,30 +1,17 @@
 using System.Net;
-using ip_alchemist_cli.libs;
 using Spectre.Console;
 
 namespace ip_alchemist_cli.models
 {
-    public class Network
+    public class Block : NetworkSegment
     {
-        public Network(string ipAddress, int prefixLength)
+        public Block(string ipAddress, int prefixLength)
         {
             Address = IPAddress.Parse(ipAddress);
             PrefixLength = prefixLength;
         }
 
-        public IPAddress? Address { get; set; }
-        public int PrefixLength { get; set; }
-        public (IPAddress decimalMask, string binaryMask) NetworkMask => IPv4Library.GenerateNetworkMask(PrefixLength);
-        public IPAddress WildcardMask => IPv4Library.GenerateWildcardMask(NetworkMask.decimalMask);
-        public IPAddress NetworkAddress => IPv4Library.GenerateNetworkAddress(Address!, NetworkMask.decimalMask);
-        public IPAddress BroadcastAddress => IPv4Library.GenerateBroadcastAddress(NetworkAddress, NetworkMask.decimalMask);
-        public long TotalHosts => IPv4Library.TotalNumberOfAddresses(PrefixLength);
-        public long TotalValidHosts => (TotalHosts - 2) < 1 ? 0 : TotalHosts - 2;
-        public string AddressRange => IPv4Library.GenerateAddressRange(NetworkAddress, BroadcastAddress, TotalValidHosts);
-        public string NetworkType => IPv4Library.GetNetworkType(Address!);
-
-        #region Methods
-        public virtual void Display()
+        public override void Display()
         {
             AnsiConsole.Write("\n");
 
@@ -46,7 +33,5 @@ namespace ip_alchemist_cli.models
 
             AnsiConsole.Write(output);
         }
-
-        #endregion
     }
 }

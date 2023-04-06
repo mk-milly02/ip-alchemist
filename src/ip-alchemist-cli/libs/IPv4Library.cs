@@ -1,6 +1,5 @@
 using System.Net;
 using System.Text;
-using ip_alchemist_cli.models;
 
 namespace ip_alchemist_cli.libs
 {
@@ -178,12 +177,6 @@ namespace ip_alchemist_cli.libs
                 >= 240 and <= 255 => "Class E",
                 _ => "N/A",
             };
-        }
-
-        public static bool ValidateNumberOfValidHostsPerSubnet(string hosts, int prefixLength)
-        {
-            //The minimum number of ip addresses per subnet is two i.e network and broadcast address.
-            return int.TryParse(hosts, out int x) && x > 0 && x < (Math.Pow(2, 32 - prefixLength) - 2);
         }
     }
 }

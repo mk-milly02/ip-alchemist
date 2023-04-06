@@ -6,7 +6,7 @@ namespace ip_alchemist_cli.modules;
 
 public static class FLSM
 {
-    public static Network? Network { get; set; }
+    public static FBlock? NetworkSegment { get; set; }
 
     static string PromptForIPAddress()
     {
@@ -25,27 +25,29 @@ public static class FLSM
         var length = AnsiConsole.Prompt(
             new TextPrompt<string>("[lime]?[/] Enter the prefix length [bold]/network bits[/]: ")
             .PromptStyle(new Style(Color.Lime))
-            .Validate(length => IPv4Library.ValidatePrefixLength(length)
+            .Validate(length => FLSMLibrary.ValidatePrefixLength(length)
             ? ValidationResult.Success()
             : ValidationResult.Error("[red]! The prefix length must be >= 0 < 33[/]")));
 
         return int.Parse(length);
     }
 
-    static int PromptForNumberOfValidHostsPerSubnet(int prefixLength)
+    static int PromptForNumberOfSubnets(int prefixLength)
     {
-        var numberOfHosts = AnsiConsole.Prompt(
-            new TextPrompt<string>("[lime]?[/] Enter the number of hosts [bold]per[/] subnet: ")
+        var numberOfSubnets = AnsiConsole.Prompt(
+            new TextPrompt<string>("[lime]?[/] Enter the number of [bold]subnets[/]: ")
             .PromptStyle(new Style(Color.Lime))
-            .Validate(hosts => IPv4Library.ValidateNumberOfValidHostsPerSubnet(hosts, prefixLength)
+            .Validate(subnets => FLSMLibrary.ValidateNumberOfSubnets(subnets, prefixLength)
             ? ValidationResult.Success()
-            : ValidationResult.Error("[red]! Invalid number of hosts per subnet[/]"))
+            : ValidationResult.Error("[red]! Invalid number of subnets[/]"))
         );
-        return int.Parse(numberOfHosts);
+        return int.Parse(numberOfSubnets);
     }
 
     public static void Execute()
     {
-        Network = new(PromptForIPAddress(), PromptForPrefixLength());
+        NetworkSegment = new(PromptForIPAddress(), PromptForPrefixLength());
+        NetworkSegment.NumberOfSubnets = PromptForNumberOfSubnets(NetworkSegment.PrefixLength);
+        NetworkSegment.Display();
     }
 }

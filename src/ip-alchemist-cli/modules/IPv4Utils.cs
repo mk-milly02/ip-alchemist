@@ -6,7 +6,7 @@ namespace ip_alchemist_cli.modules
 {
     public static class IPv4Utils
     {
-        public static Network? Network { get; set; }
+        public static Block? NetworkSegment { get; set; }
 
         static string PromptForIPAddress()
         {
@@ -34,8 +34,8 @@ namespace ip_alchemist_cli.modules
 
         public static void Execute()
         {
-            Network = new(PromptForIPAddress(), PromptForPrefixLength());
-            Network.Display();
+            NetworkSegment = new(PromptForIPAddress(), PromptForPrefixLength());
+            NetworkSegment.Display();
         }
     }
 }
