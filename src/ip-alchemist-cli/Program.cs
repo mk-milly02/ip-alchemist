@@ -13,7 +13,7 @@ internal class Program
         Console.OutputEncoding = Encoding.UTF8;
 
         AnsiConsole.Write(new FigletText("ip-alchemist-cli").Color(Color.Lime));
-        AnsiConsole.MarkupLine("[bold]-- A cli toolkit for perfroming various IP address operations.[/]");
+        AnsiConsole.MarkupLine("[bold]-- A cli tool for perfroming IPv4 address subnetting.[/]");
 
         var version = Assembly.GetExecutingAssembly().GetName().Version;
         AnsiConsole.MarkupLine($"[bold]-- Developed by [link=https://github.com/mk-milly02]@mk-milly02[/] | Version {version}.[/]");
@@ -23,7 +23,7 @@ internal class Program
         var choice = AnsiConsole.Prompt(new SelectionPrompt<string>().PageSize(10)
             .Title("[lime]?[/] [bold]Select from the [blue]menu[/]:[/]")
             .AddChoices("- network information")
-            .AddChoiceGroup("- subnetting", new[] { "fixed length subnet mask (FLSM)" })
+            .AddChoices("- fixed length subnet mask (FLSM)")
             .AddChoices("- exit"));
 
         switch (choice)
@@ -32,7 +32,7 @@ internal class Program
                 NetworkInformation.Execute();
                 break;
 
-            case "fixed length subnet mask (FLSM)":
+            case "- fixed length subnet mask (FLSM)":
                 FLSM.Execute();
                 break;
 

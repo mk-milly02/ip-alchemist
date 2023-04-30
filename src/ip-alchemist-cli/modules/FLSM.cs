@@ -39,7 +39,7 @@ public static class FLSM
             .PromptStyle(new Style(Color.Lime))
             .Validate(subnets => FLSMLibrary.ValidateNumberOfSubnets(subnets, prefixLength)
             ? ValidationResult.Success()
-            : ValidationResult.Error("[red]! Invalid number of subnets[/]"))
+            : ValidationResult.Error("[red]! Invalid number of subnets (must be a power of 2)[/]"))
         );
         return int.Parse(numberOfSubnets);
     }
