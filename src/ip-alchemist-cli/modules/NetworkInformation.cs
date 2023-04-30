@@ -4,7 +4,7 @@ using Spectre.Console;
 
 namespace ip_alchemist_cli.modules
 {
-    public static class IPv4Utils
+    public static class NetworkInformation
     {
         public static Block? NetworkSegment { get; set; }
 

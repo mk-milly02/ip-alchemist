@@ -22,14 +22,14 @@ internal class Program
 
         var choice = AnsiConsole.Prompt(new SelectionPrompt<string>().PageSize(10)
             .Title("[lime]?[/] [bold]Select from the [blue]menu[/]:[/]")
-            .AddChoices("- ipv4-utils")
+            .AddChoices("- network information")
             .AddChoiceGroup("- subnetting", new[] { "fixed length subnet mask (FLSM)" })
             .AddChoices("- exit"));
 
         switch (choice)
         {
-            case "- ipv4-utils":
-                IPv4Utils.Execute();
+            case "- network information":
+                NetworkInformation.Execute();
                 break;
 
             case "fixed length subnet mask (FLSM)":
