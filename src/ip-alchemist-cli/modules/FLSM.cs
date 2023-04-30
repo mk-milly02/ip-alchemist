@@ -27,7 +27,7 @@ public static class FLSM
             .PromptStyle(new Style(Color.Lime))
             .Validate(length => FLSMLibrary.ValidatePrefixLength(length)
             ? ValidationResult.Success()
-            : ValidationResult.Error("[red]! The prefix length must be >= 0 < 33[/]")));
+            : ValidationResult.Error("[red]! The prefix length must be >= 1 <= 30[/]")));
 
         return int.Parse(length);
     }

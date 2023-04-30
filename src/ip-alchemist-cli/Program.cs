@@ -23,7 +23,7 @@ internal class Program
         var choice = AnsiConsole.Prompt(new SelectionPrompt<string>().PageSize(10)
             .Title("[lime]?[/] [bold]Select from the [blue]menu[/]:[/]")
             .AddChoices("- ipv4-utils")
-            .AddChoiceGroup("- subnetting", new[] { "fixed length subnet mask (FLSM)", "variable length subnet mask (VLSM)" })
+            .AddChoiceGroup("- subnetting", new[] { "fixed length subnet mask (FLSM)" })
             .AddChoices("- exit"));
 
         switch (choice)
