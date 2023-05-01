@@ -85,5 +85,10 @@ namespace ip_alchemist_cli.libs
 
             return ouput;
         }
+
+        public static long GetTotalNumberOfDesiredHosts(IEnumerable<Subnet> subnets)
+        {
+            return subnets.Sum(subnet => subnet.Hosts);
+        }
     }
 }

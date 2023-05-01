@@ -50,5 +50,25 @@ namespace ip_alchemist_cli.tests
             // Then
             Assert.NotEqual(expected, actual);
         }
+
+        [Fact]
+        public void ShouldPass_GetTotalNumberOfDesiredHosts()
+        {
+            // Given
+            List<Subnet> subnets = new()
+            {
+                new() { Hosts = 10 },
+                new() { Hosts = 10 },
+                new() { Hosts = 10 },
+                new() { Hosts = 10 },
+                new() { Hosts = 10 }
+            };
+
+            long expected = 50;
+            // When
+            long actual = Subnetting.GetTotalNumberOfDesiredHosts(subnets);
+            // Then
+            Assert.Equal(expected, actual);
+        }
     }
 }
