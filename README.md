@@ -30,7 +30,7 @@ To use the app, simply run it from the command line and follow the prompts. You 
 
 **Menu**
 
-![image](assets\menu.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/menu.png)
 
 **Network Information**
 
@@ -38,7 +38,7 @@ To use the app, simply run it from the command line and follow the prompts. You 
 eg. 192.168.1.0/24
 ```
 
-![image](assets\network-information.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/network-information.png)
 
 **Fixed-length Subnet Mask**
 
@@ -46,9 +46,9 @@ eg. 192.168.1.0/24
 eg. 192.168.1.0/24, 4 subnets
 ```
 
-![image](assets\flsm-1.png)
-![image](assets\flsm-2.png)
-![image](assets\flsm-3.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/flsm-1.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/flsm-2.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/flsm-3.png)
 
 **Variable-length Subnet Mask**
 
@@ -56,8 +56,8 @@ eg. 192.168.1.0/24, 4 subnets
 eg. 192.168.1.0/24, 2 subnets [100 hosts, 45 hosts]
 ```
 
-![image](assets\vlsm-1.png)
-![image](assets\vlsm-2.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/vlsm-1.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/vlsm-2.png)
 
 ## **Contributing**
 
