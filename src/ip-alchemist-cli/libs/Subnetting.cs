@@ -63,9 +63,9 @@ namespace ip_alchemist_cli.libs
             return new(ipBytes);
         }
 
-        public static bool ValidateNumberOfHostsPerSubnet(string desiredHosts)
+        public static bool ValidateNumberOfHostsPerSubnet(string desiredHosts, int prefixLength)
         {
-            return int.TryParse(desiredHosts, out _);
+            return int.TryParse(desiredHosts, out int x) && x > 0 && x < Math.Pow(2, 32 - prefixLength);
         }
 
         public static PowerOfTwo GetActualNumberOfHosts(int hosts)
@@ -86,9 +86,9 @@ namespace ip_alchemist_cli.libs
             return ouput;
         }
 
-        public static long GetTotalNumberOfDesiredHosts(IEnumerable<Subnet> subnets)
+        public static long GetTotalNumberOfDesiredHosts(IEnumerable<VSubnet> subnets)
         {
-            return subnets.Sum(subnet => subnet.Hosts);
+            return subnets.Sum(subnet => subnet.DesiredHosts);
         }
     }
 }

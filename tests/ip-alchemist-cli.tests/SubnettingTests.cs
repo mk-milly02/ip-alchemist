@@ -55,13 +55,13 @@ namespace ip_alchemist_cli.tests
         public void ShouldPass_GetTotalNumberOfDesiredHosts()
         {
             // Given
-            List<Subnet> subnets = new()
+            List<VSubnet> subnets = new()
             {
-                new() { Hosts = 10 },
-                new() { Hosts = 10 },
-                new() { Hosts = 10 },
-                new() { Hosts = 10 },
-                new() { Hosts = 10 }
+                new() { DesiredHosts = 10 },
+                new() { DesiredHosts = 10 },
+                new() { DesiredHosts = 10 },
+                new() { DesiredHosts = 10 },
+                new() { DesiredHosts = 10 }
             };
 
             long expected = 50;

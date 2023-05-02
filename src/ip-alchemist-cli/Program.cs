@@ -23,7 +23,8 @@ internal class Program
         var choice = AnsiConsole.Prompt(new SelectionPrompt<string>().PageSize(10)
             .Title("[lime]?[/] [bold]Select from the [blue]menu[/]:[/]")
             .AddChoices("- network information")
-            .AddChoices("- fixed length subnet mask (FLSM)")
+            .AddChoices("- fixed length subnet mask (flsm)")
+            .AddChoices("- variable length subnet mask (vlsm)")
             .AddChoices("- exit"));
 
         switch (choice)
@@ -32,8 +33,12 @@ internal class Program
                 NetworkInformation.Execute();
                 break;
 
-            case "- fixed length subnet mask (FLSM)":
+            case "- fixed length subnet mask (flsm)":
                 FLSM.Execute();
+                break;
+
+            case "- variable length subnet mask (vlsm)":
+                VLSM.Execute();
                 break;
 
             case "- exit":

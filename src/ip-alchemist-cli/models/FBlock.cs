@@ -66,7 +66,7 @@ namespace ip_alchemist_cli.models
                 Subnet subnet1 = new()
                 {
                     Number = i + 1,
-                    Address = FLSMLibrary.GetNextAvailableIPAddress(Subnets[i - 1].BroadcastAddress),
+                    Address = Subnetting.GetNextAvailableIPAddress(Subnets[i - 1].BroadcastAddress),
                     Hosts = NumberOfSubnets,
                     PrefixLength = 32 - (int)Math.Log2(HostsPerSubnet)
                 };

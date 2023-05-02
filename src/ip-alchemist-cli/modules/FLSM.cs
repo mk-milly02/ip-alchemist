@@ -25,7 +25,7 @@ public static class FLSM
         var length = AnsiConsole.Prompt(
             new TextPrompt<string>("[lime]?[/] Enter the prefix length [bold]/network bits[/]: ")
             .PromptStyle(new Style(Color.Lime))
-            .Validate(length => FLSMLibrary.ValidatePrefixLength(length)
+            .Validate(length => Subnetting.ValidatePrefixLength(length)
             ? ValidationResult.Success()
             : ValidationResult.Error("[red]! The prefix length must be >= 1 <= 30[/]")));
 
@@ -37,7 +37,7 @@ public static class FLSM
         var numberOfSubnets = AnsiConsole.Prompt(
             new TextPrompt<string>("[lime]?[/] Enter the number of [bold]subnets[/]: ")
             .PromptStyle(new Style(Color.Lime))
-            .Validate(subnets => FLSMLibrary.ValidateNumberOfSubnets(subnets, prefixLength)
+            .Validate(subnets => Subnetting.ValidateNumberOfSubnets(subnets, prefixLength)
             ? ValidationResult.Success()
             : ValidationResult.Error("[red]! Invalid number of subnets (must be a power of 2)[/]"))
         );
