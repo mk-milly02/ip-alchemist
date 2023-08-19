@@ -1,5 +1,4 @@
-using ip_alchemist_cli.libs;
-using ip_alchemist_cli.models;
+using ip_alchemist.core;
 using Spectre.Console;
 
 namespace ip_alchemist_cli.modules;
@@ -48,6 +47,6 @@ public static class FLSM
     {
         NetworkSegment = new(PromptForIPAddress(), PromptForPrefixLength());
         NetworkSegment.NumberOfSubnets = PromptForNumberOfSubnets(NetworkSegment.PrefixLength);
-        NetworkSegment.Display();
+        NetworkSegment.WriteToConsole();
     }
 }

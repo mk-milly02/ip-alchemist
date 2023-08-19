@@ -1,5 +1,4 @@
-using ip_alchemist_cli.libs;
-using ip_alchemist_cli.models;
+using ip_alchemist.core;
 using Spectre.Console;
 
 namespace ip_alchemist_cli.modules;
@@ -76,7 +75,7 @@ public static class VLSM
         Network = new(PromptForIPAddress(), PromptForPrefixLength());
         Network.NumberOfSubnets = PromptForNumberOfSubnets(Network.PrefixLength);
         PromptForDesiredNumberOfHostsPerSubnet(Network);
-        Network.Display();
+        Network.WriteToConsole();
         Network.GenerateSubnets();
     }
 }

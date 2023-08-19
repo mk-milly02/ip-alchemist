@@ -1,6 +1,5 @@
 using System.Net;
-using ip_alchemist_cli.libs;
-using ip_alchemist_cli.models;
+using ip_alchemist.core;
 using Xunit;
 
 namespace ip_alchemist_cli.tests

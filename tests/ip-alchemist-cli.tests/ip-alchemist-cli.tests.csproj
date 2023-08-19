@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>ip_alchemist_cli.tests</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ip-alchemist-cli\ip-alchemist-cli.csproj" />
+    <ProjectReference Include="..\..\src\ip-alchemist.core\ip-alchemist.core.csproj" />
   </ItemGroup>
 
 </Project>

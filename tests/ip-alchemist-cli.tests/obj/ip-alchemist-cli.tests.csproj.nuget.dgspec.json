@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj": {}
+    "d:\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj": {}
   },
   "projects": {
-    "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj": {
+    "d:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj",
-        "projectName": "ip-alchemist-cli",
-        "projectPath": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj",
+        "projectUniqueName": "d:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
+        "projectName": "ip-alchemist.core",
+        "projectPath": "d:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\obj\\",
+        "outputPath": "d:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -42,14 +42,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Spectre.Console": {
-              "target": "Package",
-              "version": "[0.46.0, )"
-            }
-          },
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
@@ -66,18 +60,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj": {
+    "d:\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj",
+        "projectUniqueName": "d:\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj",
         "projectName": "ip-alchemist-cli.tests",
-        "projectPath": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj",
+        "projectPath": "d:\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\obj\\",
+        "outputPath": "d:\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -88,7 +82,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -96,11 +90,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj": {
-                "projectPath": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj"
+              "d:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
+                "projectPath": "d:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj"
               }
             }
           }
@@ -112,8 +106,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -152,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

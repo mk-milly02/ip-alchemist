@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JjRsIZg53gtvWVaVfv0l7Wli49iS67jrnxfBUNHQ7t6is06cSIOVmUwjBBJXEOzfEc8U/mjayVQtD15c7IAeWw==",
+  "dgSpecHash": "E5868O8wwvNQyVEYP6kboXbOU/68hrnbO2zjh7Elh+oIpFZeGO2ZhNcMSmwbbSTMvnexxW8AragDTZ3Mleu1VQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj",
+  "projectFilePath": "D:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jonas\\.nuget\\packages\\spectre.console\\0.46.0\\spectre.console.0.46.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"

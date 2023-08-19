@@ -1,5 +1,4 @@
-using ip_alchemist_cli.libs;
-using ip_alchemist_cli.models;
+using ip_alchemist.core;
 using Spectre.Console;
 
 namespace ip_alchemist_cli.modules
@@ -10,7 +9,7 @@ namespace ip_alchemist_cli.modules
 
         static string PromptForIPAddress()
         {
-            var ipAddress = AnsiConsole.Prompt(
+            string ipAddress = AnsiConsole.Prompt(
                 new TextPrompt<string>("[lime]?[/] Enter the IP Address you want to work with [bold]<eg. x.x.x.x>[/]: ")
                 .PromptStyle(new Style(Color.Lime))
                 .Validate(ip => IPv4Library.ValidateIPAddress(ip)
@@ -22,7 +21,7 @@ namespace ip_alchemist_cli.modules
 
         static int PromptForPrefixLength()
         {
-            var length = AnsiConsole.Prompt(
+            string length = AnsiConsole.Prompt(
                 new TextPrompt<string>("[lime]?[/] Enter the prefix length [bold]/network bits[/]: ")
                 .PromptStyle(new Style(Color.Lime))
                 .Validate(length => IPv4Library.ValidatePrefixLength(length)
@@ -35,7 +34,7 @@ namespace ip_alchemist_cli.modules
         public static void Execute()
         {
             NetworkSegment = new(PromptForIPAddress(), PromptForPrefixLength());
-            NetworkSegment.Display();
+            NetworkSegment.WriteToConsole();
         }
     }
 }

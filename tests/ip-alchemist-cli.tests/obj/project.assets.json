@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net7.0": {
       "coverlet.collector/3.1.2": {
         "type": "package",
         "build": {
@@ -621,22 +621,6 @@
           }
         }
       },
-      "Spectre.Console/0.46.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.5"
-        },
-        "compile": {
-          "lib/net6.0/Spectre.Console.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Spectre.Console.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1008,15 +992,6 @@
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
-        }
-      },
-      "System.Memory/4.5.5": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Net.Http/4.3.0": {
@@ -1828,17 +1803,14 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
-      "ip-alchemist-cli/1.0.0": {
+      "ip-alchemist.core/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Spectre.Console": "0.46.0"
-        },
+        "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/ip-alchemist-cli.dll": {}
+          "bin/placeholder/ip-alchemist.core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ip-alchemist-cli.dll": {}
+          "bin/placeholder/ip-alchemist.core.dll": {}
         }
       }
     }
@@ -2871,24 +2843,6 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
-      ]
-    },
-    "Spectre.Console/0.46.0": {
-      "sha512": "qd2OMEGxfQW1KLuQj56KKHkIK6eB/IUF/AET5CRl/efROHGsvBehx9shfkL0HgJEHLCwRiR7foWi4/LkdPk18g==",
-      "type": "package",
-      "path": "spectre.console/0.46.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net6.0/Spectre.Console.dll",
-        "lib/net6.0/Spectre.Console.xml",
-        "lib/net7.0/Spectre.Console.dll",
-        "lib/net7.0/Spectre.Console.xml",
-        "lib/netstandard2.0/Spectre.Console.dll",
-        "lib/netstandard2.0/Spectre.Console.xml",
-        "small-logo.png",
-        "spectre.console.0.46.0.nupkg.sha512",
-        "spectre.console.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -4011,29 +3965,6 @@
         "runtimes/aot/lib/netcore50/System.Linq.Expressions.dll",
         "system.linq.expressions.4.3.0.nupkg.sha512",
         "system.linq.expressions.nuspec"
-      ]
-    },
-    "System.Memory/4.5.5": {
-      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
-      "type": "package",
-      "path": "system.memory/4.5.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Memory.dll",
-        "lib/net461/System.Memory.xml",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.1/System.Memory.dll",
-        "lib/netstandard1.1/System.Memory.xml",
-        "lib/netstandard2.0/System.Memory.dll",
-        "lib/netstandard2.0/System.Memory.xml",
-        "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.5.nupkg.sha512",
-        "system.memory.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.Net.Http/4.3.0": {
@@ -6185,17 +6116,17 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "ip-alchemist-cli/1.0.0": {
+    "ip-alchemist.core/1.0.0": {
       "type": "project",
-      "path": "../../src/ip-alchemist-cli/ip-alchemist-cli.csproj",
-      "msbuildProject": "../../src/ip-alchemist-cli/ip-alchemist-cli.csproj"
+      "path": "../../src/ip-alchemist.core/ip-alchemist.core.csproj",
+      "msbuildProject": "../../src/ip-alchemist.core/ip-alchemist.core.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net7.0": [
       "Microsoft.NET.Test.Sdk >= 17.1.0",
       "coverlet.collector >= 3.1.2",
-      "ip-alchemist-cli >= 1.0.0",
+      "ip-alchemist.core >= 1.0.0",
       "xunit >= 2.4.2",
       "xunit.runner.visualstudio >= 2.4.3"
     ]
@@ -6207,11 +6138,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj",
+      "projectUniqueName": "d:\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj",
       "projectName": "ip-alchemist-cli.tests",
-      "projectPath": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj",
+      "projectPath": "d:\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\ip-alchemist-cli.tests.csproj",
       "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\obj\\",
+      "outputPath": "d:\\Projects\\ip-alchemist-cli\\tests\\ip-alchemist-cli.tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6222,7 +6153,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -6230,11 +6161,11 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj": {
-              "projectPath": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj"
+            "d:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
+              "projectPath": "d:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj"
             }
           }
         }
@@ -6246,8 +6177,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -6286,7 +6217,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

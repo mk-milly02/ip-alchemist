@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C169926A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ip-alchemist-cli.tests", "tests\ip-alchemist-cli.tests\ip-alchemist-cli.tests.csproj", "{93CA299E-A21D-4226-BB0F-ED7D82C38395}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ip-alchemist.core", "src\ip-alchemist.core\ip-alchemist.core.csproj", "{CA644B55-42C1-4B61-957A-8499AEE8EF8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +30,14 @@ Global
 		{93CA299E-A21D-4226-BB0F-ED7D82C38395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93CA299E-A21D-4226-BB0F-ED7D82C38395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93CA299E-A21D-4226-BB0F-ED7D82C38395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA644B55-42C1-4B61-957A-8499AEE8EF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA644B55-42C1-4B61-957A-8499AEE8EF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA644B55-42C1-4B61-957A-8499AEE8EF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA644B55-42C1-4B61-957A-8499AEE8EF8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{45E3C16F-341E-41D7-8AAA-50FFD5BE4C45} = {421B0107-C636-44E5-8518-2E2F8FFD4CEF}
 		{93CA299E-A21D-4226-BB0F-ED7D82C38395} = {C169926A-23A4-42DA-B912-AF150448439A}
+		{CA644B55-42C1-4B61-957A-8499AEE8EF8F} = {421B0107-C636-44E5-8518-2E2F8FFD4CEF}
 	EndGlobalSection
 EndGlobal

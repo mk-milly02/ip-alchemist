@@ -1,0 +1,63 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "ip-alchemist-cli/1.0.0": {
+        "dependencies": {
+          "Spectre.Console": "0.46.0",
+          "ip-alchemist.core": "1.0.0"
+        },
+        "runtime": {
+          "ip-alchemist-cli.dll": {}
+        }
+      },
+      "Spectre.Console/0.46.0": {
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "runtime": {
+          "lib/net7.0/Spectre.Console.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.46.0.0"
+          }
+        }
+      },
+      "System.Memory/4.5.5": {},
+      "ip-alchemist.core/1.0.0": {
+        "runtime": {
+          "ip-alchemist.core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ip-alchemist-cli/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Spectre.Console/0.46.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qd2OMEGxfQW1KLuQj56KKHkIK6eB/IUF/AET5CRl/efROHGsvBehx9shfkL0HgJEHLCwRiR7foWi4/LkdPk18g==",
+      "path": "spectre.console/0.46.0",
+      "hashPath": "spectre.console.0.46.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
+    },
+    "ip-alchemist.core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

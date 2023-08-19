@@ -1,19 +1,19 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net7.0": {
       "Spectre.Console/0.46.0": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.5"
         },
         "compile": {
-          "lib/net6.0/Spectre.Console.dll": {
+          "lib/net7.0/Spectre.Console.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Spectre.Console.dll": {
+          "lib/net7.0/Spectre.Console.dll": {
             "related": ".xml"
           }
         }
@@ -25,6 +25,16 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "ip-alchemist.core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ip-alchemist.core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ip-alchemist.core.dll": {}
         }
       }
     }
@@ -70,11 +80,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ip-alchemist.core/1.0.0": {
+      "type": "project",
+      "path": "../ip-alchemist.core/ip-alchemist.core.csproj",
+      "msbuildProject": "../ip-alchemist.core/ip-alchemist.core.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Spectre.Console >= 0.46.0"
+    "net7.0": [
+      "Spectre.Console >= 0.46.0",
+      "ip-alchemist.core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -84,11 +100,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj",
+      "projectUniqueName": "D:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj",
       "projectName": "ip-alchemist-cli",
-      "projectPath": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj",
+      "projectPath": "D:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\ip-alchemist-cli.csproj",
       "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\jonas\\OneDrive\\Desktop\\Programming\\C#\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\obj\\",
+      "outputPath": "D:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist-cli\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,7 +115,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -107,9 +123,13 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "projectReferences": {}
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "D:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
+              "projectPath": "D:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -119,8 +139,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "dependencies": {
           "Spectre.Console": {
             "target": "Package",
@@ -143,7 +163,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

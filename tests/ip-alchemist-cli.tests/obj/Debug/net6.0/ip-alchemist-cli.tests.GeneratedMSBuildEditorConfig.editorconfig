@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ip_alchemist_cli.tests
-build_property.ProjectDir = c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\ip-alchemist-cli\tests\ip-alchemist-cli.tests\
+build_property.ProjectDir = d:\Projects\ip-alchemist-cli\tests\ip-alchemist-cli.tests\
