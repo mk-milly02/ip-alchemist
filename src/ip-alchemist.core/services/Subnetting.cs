@@ -90,4 +90,9 @@ public static class Subnetting
     {
         return subnets.Sum(subnet => subnet.DesiredHosts);
     }
+
+    public static long GetTotalNumberOfHosts(IEnumerable<VSubnet> subnets)
+    {
+        return subnets.Sum(subnet => subnet.Hosts);
+    }
 }

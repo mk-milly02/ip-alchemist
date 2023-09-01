@@ -23,7 +23,7 @@ public static class Extensions
         output.AddRow("Network Type", Block.NetworkType);
         output.AddRow("[lime]Addressess (Total)[/]", Block.TotalHosts.ToString());
         output.AddRow("Valid Hosts", Block.TotalValidHosts.ToString());
-        output.AddRow("[blue]Range[/]", $"[yellow]{Block.AddressRange}[/]");
+        output.AddRow("[blue]Assignable range[/]", $"[yellow]{Block.AddressRange}[/]");
 
         AnsiConsole.Write(output);
     }
@@ -46,7 +46,7 @@ public static class Extensions
         output.AddRow("Broadcast Address", Subnet.BroadcastAddress.ToString());
         output.AddRow("[lime]Addressess(Total)[/]", Subnet.TotalHosts.ToString());
         output.AddRow("Valid Host", Subnet.TotalValidHosts.ToString());
-        output.AddRow("[blue]Range[/]", $"[yellow]{Subnet.AddressRange}[/]");
+        output.AddRow("[blue]Assignable range[/]", $"[yellow]{Subnet.AddressRange}[/]");
 
         AnsiConsole.Write("\n");
         AnsiConsole.Write(output);
@@ -69,7 +69,7 @@ public static class Extensions
         output.AddRow("Broadcast Address", FBlock.BroadcastAddress.ToString());
         output.AddRow("Network Type", FBlock.NetworkType);
         output.AddRow("[lime]Addressess (Total)[/]", FBlock.TotalValidHosts.ToString());
-        output.AddRow("[blue]Range[/]", $"[yellow]{FBlock.AddressRange}[/]");
+        output.AddRow("[blue]Assignable range[/]", $"[yellow]{FBlock.AddressRange}[/]");
 
         AnsiConsole.Write(output);
 
@@ -136,7 +136,8 @@ public static class Extensions
         output.AddRow("Network Type", VBlock.NetworkType);
         output.AddRow("[lime]Addressess (Total)[/]", VBlock.TotalHosts.ToString());
         output.AddRow("Valid Hosts", VBlock.TotalValidHosts.ToString());
-        output.AddRow("[blue]Range[/]", $"[yellow]{VBlock.AddressRange}[/]");
+        output.AddRow("[blue]Assignable range[/]", $"[yellow]{VBlock.AddressRange}[/]");
+        output.AddRow("[green]% of network space used[/]", $"[bold]{VBlock.AddressSpaceUsed}%[/]");
 
         AnsiConsole.Write(output);
     }
@@ -162,7 +163,7 @@ public static class Extensions
         output.AddRow("[lime]Desired Hosts[/]", VSubnet.DesiredHosts.ToString());
         output.AddRow("[lime]Unused Hosts[/]", (VSubnet.TotalHosts - VSubnet.DesiredHosts).ToString());
         output.AddRow("[lime]Valid Hosts[/]", VSubnet.TotalValidHosts.ToString());
-        output.AddRow("[blue]Range[/]", $"[bold italic]{VSubnet.AddressRange}[/]");
+        output.AddRow("[blue]Assignable range[/]", $"[bold italic]{VSubnet.AddressRange}[/]");
 
         AnsiConsole.Write("\n");
         AnsiConsole.Write(output);
@@ -194,7 +195,9 @@ public static class Extensions
                 FileOperations.WriteToCSV(path, VBlock.Subnets!);
             }
         }
-
-        AnsiConsole.MarkupLine($"[red]! Subnetting error - total number of desired host must be < {VBlock.TotalHosts}.[/]");
+        else
+        {
+            AnsiConsole.MarkupLine($"[red]! Subnetting error - total number of desired host must be < {VBlock.TotalHosts}.[/]");
+        }
     }
 }
