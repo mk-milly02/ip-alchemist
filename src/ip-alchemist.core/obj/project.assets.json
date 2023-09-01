@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
+      "projectUniqueName": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
       "projectName": "ip-alchemist.core",
-      "projectPath": "d:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
+      "projectPath": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
       "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-      "outputPath": "d:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\obj\\",
+      "outputPath": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

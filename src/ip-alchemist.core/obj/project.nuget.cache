@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fQHlagUZ/8JKGv5Efpx03k1oReRYVMfuUKYhTrWK/TNSBj9kEFqgAn0dxKXlrtSOV2GVBI3q90NUHujdAOqMbA==",
+  "dgSpecHash": "s7I7srewoKGjXPdXK6nLSlZQre/xjyp92WsVMOic46u0Pkbx9bSXKXHdwInGMYGARJ+Y7ozdbrENJll06cgjaQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\ip-alchemist-cli\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
+  "projectFilePath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

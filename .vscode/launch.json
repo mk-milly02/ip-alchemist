@@ -2,6 +2,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": ".NET MAUI",
+            "type": "maui",
+            "request": "launch",
+            "preLaunchTask": "maui: Build"
+        },
+        {
             // Use IntelliSense to find out which attributes exist for C# debugging
             // Use hover for the description of the existing attributes
             // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
@@ -10,9 +16,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/ip-alchemist-cli/bin/Debug/net6.0/ip-alchemist-cli.dll",
+            "program": "${workspaceFolder}/src/ip-alchemist.cli/bin/Debug/net7.0/ip-alchemist.cli.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/ip-alchemist-cli",
+            "cwd": "${workspaceFolder}/src/ip-alchemist.cli",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "externalTerminal",
             "stopAtEntry": false
