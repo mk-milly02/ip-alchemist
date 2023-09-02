@@ -7,18 +7,18 @@
              x:DataType="viewmodels:NetworkOverviewViewModel"
              Shell.NavBarIsVisible="False">
     
-    <VerticalStackLayout Margin="15">
+    <VerticalStackLayout Margin="15" Spacing="20">
         
         <Grid ColumnDefinitions="*, *, *">
 
             <HorizontalStackLayout Spacing="15">
                 <Label Text="IP Address:" VerticalOptions="Center" />
-                <Entry WidthRequest="150" Placeholder="192.168.1.2" Text="{Binding IpAddress}" />
+                <Entry WidthRequest="150" Placeholder="192.168.1.2" Text="{Binding Address, Mode=OneWayToSource}" />
             </HorizontalStackLayout>
 
             <HorizontalStackLayout Grid.Column="1" Spacing="15">
                 <Label Text="Prefix Length:" VerticalOptions="Center" />
-                <Entry WidthRequest="150" Placeholder="24" Text="{Binding PrefixLength}" Keyboard="Numeric" />
+                <Entry WidthRequest="150" Placeholder="24" Text="{Binding PrefixLength, Mode=OneWayToSource}" />
             </HorizontalStackLayout>
 
             <Button Grid.Column="2" Text="Check" WidthRequest="100" 
@@ -26,7 +26,63 @@
                     IsEnabled="{Binding CanGenerateNetworkInformation}"/>
             
         </Grid>
-        
+
+        <Label Text="Network Information" TextColor="{StaticResource Primary}" FontSize="Title" />
+
+        <Grid ColumnDefinitions="*, *" RowDefinitions="*, *, *, *, *" RowSpacing="8">
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Prefix Length:" />
+                <Label Text="{Binding PrefixLength}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="1">
+                <Label Text="Network Address:" />
+                <Label Text="{Binding NetworkAddress}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="2">
+                <Label Text="Network mask (dec):" />
+                <Label Text="{Binding DecimalNetworkMask}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="3">
+                <Label Text="Wildcard mask:" />
+                <Label Text="{Binding WildcardMask}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="4">
+                <Label Text="Network mask:" />
+                <Label Text="{Binding BinaryNetworkMask}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Column="1">
+                <Label Text="Broadcast Address:" />
+                <Label Text="{Binding BroadcastAddress}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="1" Grid.Column="1">
+                <Label Text="Network type:" />
+                <Label Text="{Binding NetworkType}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="2" Grid.Column="1">
+                <Label Text="Total hosts:" />
+                <Label Text="{Binding TotalHosts}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="3" Grid.Column="1">
+                <Label Text="Total valid hosts:" />
+                <Label Text="{Binding TotalValidHosts}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="4" Grid.Column="1">
+                <Label Text="Assignable address range:" />
+                <Label Text="{Binding Range}" />
+            </HorizontalStackLayout>
+        </Grid>
+
+        <Label Text="Summary" FontSize="Subtitle" TextColor="{StaticResource Primary}" />
+
     </VerticalStackLayout>
     
 </ContentPage>
