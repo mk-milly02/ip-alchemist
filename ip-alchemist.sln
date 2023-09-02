@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ip-alchemist.tests", "tests
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ip-alchemist.core", "src\ip-alchemist.core\ip-alchemist.core.csproj", "{CA644B55-42C1-4B61-957A-8499AEE8EF8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ip-alchemist.gui", "src\ip-alchemist.gui\ip-alchemist.gui.csproj", "{90C602A4-1F30-4181-8895-6C3D35A64AC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ip-alchemist.gui", "src\ip-alchemist.gui\ip-alchemist.gui.csproj", "{90C602A4-1F30-4181-8895-6C3D35A64AC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +35,7 @@ Global
 		{CA644B55-42C1-4B61-957A-8499AEE8EF8F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{90C602A4-1F30-4181-8895-6C3D35A64AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{90C602A4-1F30-4181-8895-6C3D35A64AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90C602A4-1F30-4181-8895-6C3D35A64AC9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{90C602A4-1F30-4181-8895-6C3D35A64AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90C602A4-1F30-4181-8895-6C3D35A64AC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

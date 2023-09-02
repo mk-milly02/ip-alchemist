@@ -517,7 +517,6 @@ d:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-ios\iossimulator-
 d:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-ios\iossimulator-x64\ip-alchemist.gui.pdb
 d:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-ios\iossimulator-x64\ip-alchemist.gui.genruntimeconfig.cache
 d:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-ios\iossimulator-x64\ref\ip-alchemist.gui.dll
-d:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-ios\iossimulator-x64\build-signature\signature
 d:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
 d:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
 d:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png

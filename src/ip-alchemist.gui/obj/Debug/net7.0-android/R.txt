@@ -3425,6 +3425,10 @@ int mipmap appicon 0x7f0d0000
 int mipmap appicon_background 0x7f0d0001
 int mipmap appicon_foreground 0x7f0d0002
 int mipmap appicon_round 0x7f0d0003
+int mipmap terminal 0x7f0d0004
+int mipmap terminal_background 0x7f0d0005
+int mipmap terminal_foreground 0x7f0d0006
+int mipmap terminal_round 0x7f0d0007
 int plurals mtrl_badge_content_description 0x7f0e0000
 int string abc_action_bar_home_description 0x7f0f0000
 int string abc_action_bar_up_description 0x7f0f0001

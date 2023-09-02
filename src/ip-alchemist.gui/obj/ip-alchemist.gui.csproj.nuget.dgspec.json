@@ -1,17 +1,77 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\ip-alchemist.gui.csproj": {}
+    "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\ip-alchemist.gui.csproj": {}
   },
   "projects": {
-    "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\ip-alchemist.gui.csproj": {
+    "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\ip-alchemist.gui.csproj",
-        "projectName": "ip-alchemist.gui",
-        "projectPath": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\ip-alchemist.gui.csproj",
+        "projectUniqueName": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
+        "projectName": "ip-alchemist.core",
+        "projectPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\obj\\",
+        "outputPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\ip-alchemist.gui.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\ip-alchemist.gui.csproj",
+        "projectName": "ip-alchemist.gui",
+        "projectPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\ip-alchemist.gui.csproj",
+        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -36,19 +96,35 @@
         "frameworks": {
           "net7.0-android33.0": {
             "targetAlias": "net7.0-android",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
+                "projectPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj"
+              }
+            }
           },
           "net7.0-ios16.1": {
             "targetAlias": "net7.0-ios",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
+                "projectPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj"
+              }
+            }
           },
           "net7.0-maccatalyst16.1": {
             "targetAlias": "net7.0-maccatalyst",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
+                "projectPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj"
+              }
+            }
           },
           "net7.0-windows10.0.19041": {
             "targetAlias": "net7.0-windows10.0.19041.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
+                "projectPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -61,6 +137,10 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.1, )"
@@ -183,6 +263,10 @@
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.1, )"
@@ -250,6 +334,10 @@
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.1, )"
@@ -318,6 +406,10 @@
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.1, )"

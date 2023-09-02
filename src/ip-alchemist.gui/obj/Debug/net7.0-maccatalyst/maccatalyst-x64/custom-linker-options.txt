@@ -4,7 +4,7 @@ AreAnyAssembliesTrimmed=false
 				AOTCompiler=
 				AOTOutputDirectory=obj\Debug\net7.0-maccatalyst\maccatalyst-x64\nativelibraries/aot-output/
 				AppBundleManifestPath=bin\Debug\net7.0-maccatalyst\maccatalyst-x64\ip-alchemist.gui.app\Contents/Info.plist
-				CacheDirectory=d:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\linker-cache
+				CacheDirectory=D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\linker-cache
 				
 				Debug=true
 				DeploymentTarget=
@@ -183,7 +183,7 @@ FrameworkAssembly=System.Private.CoreLib
 				Interpreter=all
 				IntermediateLinkDir=obj\Debug\net7.0-maccatalyst\maccatalyst-x64\linked\
 				InvariantGlobalization=false
-				ItemsDirectory=d:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\linker-items
+				ItemsDirectory=D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\linker-items
 				IsAppExtension=false
 				IsSimulatorBuild=
 				LibMonoLinkMode=dylib

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "8fqeSkn2rVMFK7H79nsk3kvDAxN2T7LVAUiDDHLJu3+3/Lmk7FR87s/0MCWInkl3yYvskVGTUaFK7WsCUzrOMQ==",
+  "dgSpecHash": "prgm/iHry14d1IAv8yhnNI0ANDKny19osSfTHweXaivQwF+qSXW8kiLATo1ASncv53Bg1xc++6xgKZoqGqlpTQ==",
   "success": true,
-  "projectFilePath": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\ip-alchemist.gui.csproj",
+  "projectFilePath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.gui\\ip-alchemist.gui.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jonas\\.nuget\\packages\\communitytoolkit.maui\\5.3.0\\communitytoolkit.maui.5.3.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\communitytoolkit.maui.core\\5.3.0\\communitytoolkit.maui.core.5.3.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
@@ -20,6 +22,7 @@
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.86\\microsoft.maui.graphics.win2d.winui.desktop.7.0.86.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\system.speech\\7.0.0\\system.speech.7.0.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\xamarin.android.glide.annotations\\4.13.2.2\\xamarin.android.glide.annotations.4.13.2.2.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.13.2.2\\xamarin.android.glide.disklrucache.4.13.2.2.nupkg.sha512",
@@ -101,10 +104,10 @@
     "C:\\Users\\jonas\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.7.20.1\\xamarin.kotlin.stdlib.jdk8.1.7.20.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.6.4.1\\xamarin.kotlinx.coroutines.android.1.6.4.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
-    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.7\\microsoft.netcore.app.runtime.win-x64.7.0.7.nupkg.sha512",
-    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.7\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.7.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.28\\microsoft.windows.sdk.net.ref.10.0.19041.28.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.7\\microsoft.aspnetcore.app.runtime.win-x64.7.0.7.nupkg.sha512",
-    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.28\\microsoft.windows.sdk.net.ref.10.0.19041.28.nupkg.sha512"
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.7\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.7.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.7\\microsoft.netcore.app.runtime.win-x64.7.0.7.nupkg.sha512"
   ],
   "logs": []
 }
