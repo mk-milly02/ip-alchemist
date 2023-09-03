@@ -4,7 +4,6 @@ using ip_alchemist.core;
 using ip_alchemist.gui.Attributes;
 using System.ComponentModel.DataAnnotations;
 using System.Net;
-using System.Net.NetworkInformation;
 using System.Text;
 
 namespace ip_alchemist.gui.ViewModels
@@ -22,7 +21,7 @@ namespace ip_alchemist.gui.ViewModels
 
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(CanGenerateNetworkInformation))]
-        [PrefixLength(ErrorMessage = "- The prefix length must be between 0 & 33.")]
+        [PrefixLength(ErrorMessage = "- The prefix length must be between 0 & 32.")]
         private string prefixLength;
 
         [ObservableProperty]

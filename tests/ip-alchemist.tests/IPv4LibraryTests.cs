@@ -181,49 +181,4 @@ public class IPv4LibraryTests
     {
         Assert.Equal("Loopback", IPv4Library.GetNetworkType(IPAddress.Parse("127.0.0.1")));
     }
-
-    [Theory]
-    [InlineData("100.2.0.1")]
-    [InlineData("126.0.0.1")]
-    [InlineData("1.0.0.1")]
-    public void ClassA_GetAddressClassTest(string ip)
-    {
-        Assert.Equal("Class A", IPv4Library.GetAddressClass(IPAddress.Parse(ip)));
-    }
-
-    [Theory]
-    [InlineData("130.2.0.1")]
-    [InlineData("170.0.254.1")]
-    [InlineData("190.0.0.1")]
-    public void ClassB_GetAddressClassTest(string ip)
-    {
-        Assert.Equal("Class B", IPv4Library.GetAddressClass(IPAddress.Parse(ip)));
-    }
-
-    [Theory]
-    [InlineData("200.2.0.1")]
-    [InlineData("192.0.0.1")]
-    [InlineData("197.200.0.1")]
-    public void ClassC_GetAddressClassTest(string ip)
-    {
-        Assert.Equal("Class C", IPv4Library.GetAddressClass(IPAddress.Parse(ip)));
-    }
-
-    [Theory]
-    [InlineData("229.0.0.1")]
-    [InlineData("230.0.0.1")]
-    [InlineData("235.2.0.1")]
-    public void ClassD_GetAddressClassTest(string ip)
-    {
-        Assert.Equal("Class D", IPv4Library.GetAddressClass(IPAddress.Parse(ip)));
-    }
-
-    [Theory]
-    [InlineData("250.0.0.1")]
-    [InlineData("245.2.0.1")]
-    [InlineData("251.0.0.1")]
-    public void ClassE_GetAddressClassTest(string ip)
-    {
-        Assert.Equal("Class E", IPv4Library.GetAddressClass(IPAddress.Parse(ip)));
-    }
 }

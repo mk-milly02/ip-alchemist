@@ -27,7 +27,7 @@ public static class IPv4Library
 
     public static bool ValidatePrefixLength(string prefixLength)
     {
-        return int.TryParse(prefixLength, out int x) && x >= 0 && x < 33;
+        return int.TryParse(prefixLength, out int x) && x >= 0 && x < 32;
     }
 
     public static (IPAddress decimalMask, string binaryMask) GenerateNetworkMask(int prefixLength)
@@ -137,14 +137,14 @@ public static class IPv4Library
         return "There are no valid addresses.";
     }
 
-    public static string GetNetworkType(IPAddress ip)
+    public static string GetNetworkType(IPAddress address)
     {
-        byte[] ipBytes = ip.GetAddressBytes();
+        byte[] addressBytes = address.GetAddressBytes();
         int[] octets = new int[4];
 
-        for (int i = 0; i < ipBytes.Length; i++)
+        for (int i = 0; i < addressBytes.Length; i++)
         {
-            octets[i] = Convert.ToInt32(ipBytes[i]);
+            octets[i] = Convert.ToInt32(addressBytes[i]);
         }
 
         return octets[0] switch
@@ -155,27 +155,6 @@ public static class IPv4Library
             127 => "Loopback",
             169 when octets[1] == 254 => "Link-Local",
             _ => "Public",
-        };
-    }
-
-    public static string GetAddressClass(IPAddress ip)
-    {
-        byte[] ipBytes = ip.GetAddressBytes();
-        int[] octets = new int[4];
-
-        for (int i = 0; i < ipBytes.Length; i++)
-        {
-            octets[i] = Convert.ToInt32(ipBytes[i]);
-        }
-
-        return octets[0] switch
-        {
-            >= 1 and <= 126 => "Class A",
-            >= 128 and <= 191 => "Class B",
-            >= 192 and <= 223 => "Class C",
-            >= 224 and <= 239 => "Class D",
-            >= 240 and <= 255 => "Class E",
-            _ => "N/A",
         };
     }
 }

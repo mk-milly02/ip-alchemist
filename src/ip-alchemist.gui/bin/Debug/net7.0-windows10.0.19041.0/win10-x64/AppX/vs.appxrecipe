@@ -30,7 +30,7 @@
     <AppXManifest Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-09-02T13:42:52.882</Modified>
+      <Modified>2023-09-02T20:51:03.896</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ip-alchemist.gui.dll">
       <PackagePath>ip-alchemist.gui.dll</PackagePath>
-      <Modified>2023-09-02T13:42:50.877</Modified>
+      <Modified>2023-09-02T20:51:01.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ip-alchemist.gui.exe</PackagePath>
-      <Modified>2023-09-02T13:42:50.920</Modified>
+      <Modified>2023-09-02T20:51:01.954</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonas\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -936,11 +936,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.core\bin\Debug\net7.0\ip-alchemist.core.dll">
       <PackagePath>ip-alchemist.core.dll</PackagePath>
-      <Modified>2023-09-01T14:34:53.846</Modified>
+      <Modified>2023-09-02T20:50:53.122</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ip-alchemist.gui.deps.json">
       <PackagePath>ip-alchemist.gui.deps.json</PackagePath>
-      <Modified>2023-09-02T13:42:52.534</Modified>
+      <Modified>2023-09-02T20:51:03.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

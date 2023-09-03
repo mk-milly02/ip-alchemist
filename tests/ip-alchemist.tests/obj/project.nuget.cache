@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9A/vqXuJ5TgdWnnCfwAzZM1i/kUCaKbRo/4E4b+/ffutgV6ZwjkjxS4dbQ5Pv7K+xCiRbCIQFhwfcBc/JbnRcg==",
+  "dgSpecHash": "QroWzngWY31HL2yZ7+v4XqTm2CBtzkEug+iIG2cDG1cWy2H4a4dvnkXoqkyrUay489fy0HZ2oyvTVSNtQ023HA==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\ip-alchemist.tests.csproj",
+  "projectFilePath": "d:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\ip-alchemist.tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jonas\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

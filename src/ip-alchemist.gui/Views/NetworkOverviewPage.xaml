@@ -81,8 +81,6 @@
             </HorizontalStackLayout>
         </Grid>
 
-        <Label Text="Summary" FontSize="Subtitle" TextColor="{StaticResource Primary}" />
-
     </VerticalStackLayout>
     
 </ContentPage>

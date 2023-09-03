@@ -13,5 +13,5 @@ public abstract class NetworkSegment
     public long TotalHosts => IPv4Library.TotalNumberOfAddresses(PrefixLength);
     public long TotalValidHosts => (TotalHosts - 2) < 1 ? 0 : TotalHosts - 2;
     public string AddressRange => IPv4Library.GenerateAddressRange(NetworkAddress, BroadcastAddress, TotalValidHosts);
-    public string NetworkType => IPv4Library.GetNetworkType(Address!);
+    public string NetworkType => IPv4Library.GetNetworkType(NetworkAddress);
 }

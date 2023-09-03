@@ -26,7 +26,7 @@ namespace ip_alchemist_cli.modules
                 .PromptStyle(new Style(Color.Lime))
                 .Validate(length => IPv4Library.ValidatePrefixLength(length)
                 ? ValidationResult.Success()
-                : ValidationResult.Error("[red]! The prefix length must be >= 0 < 33[/]")));
+                : ValidationResult.Error("[red]! The prefix length must be >= 0 < 32[/]")));
 
             return int.Parse(length);
         }
