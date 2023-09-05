@@ -10,6 +10,7 @@
     <TabBar>
         <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
         <ShellContent Title="Network Overview" ContentTemplate="{DataTemplate views:NetworkOverviewPage}" Route="NetworkOverviewPage" />
+        <ShellContent Title="FLSM" ContentTemplate="{DataTemplate views:FLSMPage}" Route="FLSMPage" />
         <ShellContent Title="About" ContentTemplate="{DataTemplate views:AboutPage}" Route="AboutPage" />
     </TabBar>
 

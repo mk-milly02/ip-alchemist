@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:ip_alchemist.gui.ViewModels"
+             x:Class="ip_alchemist.gui.Views.FLSMPage"
+             x:DataType="viewmodels:FLSMViewModel"
+             Shell.NavBarIsVisible="False">
+
+    <VerticalStackLayout Margin="15" Spacing="20">
+        <Grid ColumnDefinitions="Auto, Auto, Auto, Auto" ColumnSpacing="35">
+
+            <HorizontalStackLayout Spacing="15">
+                <Label Text="IP Address:" VerticalOptions="Center" />
+                <Entry WidthRequest="150" Placeholder="192.168.1.2" Text="{Binding Address, Mode=OneWayToSource}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Grid.Column="1" Spacing="15">
+                <Label Text="Prefix Length:" VerticalOptions="Center" />
+                <Picker WidthRequest="70" SelectedItem="{Binding PrefixLength, Mode=OneWayToSource}" SelectedIndex="0"
+                        ItemsSource="{Binding PrefixLengths}"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Grid.Column="2" Spacing="15">
+                <Label Text="Subnets:" VerticalOptions="Center" />
+                <Picker WidthRequest="150" SelectedItem="{Binding NumberOfSubnets, 
+                        Mode=OneWayToSource}" SelectedIndex="0"  />
+            </HorizontalStackLayout>
+
+            <Button Grid.Column="3" Text="Subnet" WidthRequest="100" 
+                    Command="{Binding GenerateNetworkInformationCommand}" 
+                    IsEnabled="{Binding CanSubnet}"/>
+            
+        </Grid>
+        
+        <Label Text="Network Information" TextColor="{StaticResource Primary}" FontSize="Title" />
+
+        <Grid ColumnDefinitions="*, *" RowDefinitions="*, *, *, *, *" RowSpacing="8">
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Prefix Length:" />
+                <Label Text="{Binding PrefixLength}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="1">
+                <Label Text="Network Address:" />
+                <Label Text="{Binding NetworkAddress}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="2">
+                <Label Text="Network mask (dec):" />
+                <Label Text="{Binding DecimalNetworkMask}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="3">
+                <Label Text="Wildcard mask:" />
+                <Label Text="{Binding WildcardMask}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="4">
+                <Label Text="Network mask:" />
+                <Label Text="{Binding BinaryNetworkMask}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Column="1">
+                <Label Text="Broadcast Address:" />
+                <Label Text="{Binding BroadcastAddress}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="1" Grid.Column="1">
+                <Label Text="Network type:" />
+                <Label Text="{Binding NetworkType}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="2" Grid.Column="1">
+                <Label Text="Total hosts:" />
+                <Label Text="{Binding TotalHosts}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="3" Grid.Column="1">
+                <Label Text="Total valid hosts:" />
+                <Label Text="{Binding TotalValidHosts}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" Grid.Row="4" Grid.Column="1">
+                <Label Text="Assignable address range:" />
+                <Label Text="{Binding Range}" />
+            </HorizontalStackLayout>
+        </Grid>
+
+        <Label Text="Subnets" TextColor="{StaticResource Primary}" FontSize="Subtitle" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

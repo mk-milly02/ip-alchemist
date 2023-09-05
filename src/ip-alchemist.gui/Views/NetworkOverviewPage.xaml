@@ -18,7 +18,8 @@
 
             <HorizontalStackLayout Grid.Column="1" Spacing="15">
                 <Label Text="Prefix Length:" VerticalOptions="Center" />
-                <Entry WidthRequest="150" Placeholder="24" Text="{Binding PrefixLength, Mode=OneWayToSource}" />
+                <Picker WidthRequest="150" SelectedItem="{Binding PrefixLength, Mode=OneWayToSource}" SelectedIndex="1"
+                        ItemsSource="{Binding PrefixLengths}" />
             </HorizontalStackLayout>
 
             <Button Grid.Column="2" Text="Check" WidthRequest="100" 

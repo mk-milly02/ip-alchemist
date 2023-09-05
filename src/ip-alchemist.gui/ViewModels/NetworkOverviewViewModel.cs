@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using ip_alchemist.core;
 using ip_alchemist.gui.Attributes;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Text;
@@ -21,7 +22,6 @@ namespace ip_alchemist.gui.ViewModels
 
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(CanGenerateNetworkInformation))]
-        [PrefixLength(ErrorMessage = "- The prefix length must be between 0 & 32.")]
         private string prefixLength;
 
         [ObservableProperty]
@@ -51,13 +51,20 @@ namespace ip_alchemist.gui.ViewModels
         [ObservableProperty]
         private string totalValidHosts;
 
+        public ObservableCollection<string> PrefixLengths => new() 
+        { 
+            "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", 
+            "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", 
+            "21", "22", "23", "24", "25", "26", "27", "28", "29", "31" 
+        };
+
         public bool CanGenerateNetworkInformation => !string.IsNullOrWhiteSpace(Address) && !string.IsNullOrWhiteSpace(PrefixLength);
 
         [RelayCommand]
         private async Task GenerateNetworkInformation()
         {
             ValidateAllProperties();
-            if (HasErrors) { await ShowValidationErrorsAsync(GetErrors()); return; }
+            if (HasErrors) { await ShowValidationErrorsAsync(GetErrors().FirstOrDefault()); return; }
 
             Network = new(Address, int.Parse(PrefixLength));
 
@@ -72,16 +79,9 @@ namespace ip_alchemist.gui.ViewModels
             Range = Network.AddressRange;
         }
 
-        private static async Task ShowValidationErrorsAsync(IEnumerable<ValidationResult> results)
+        private static async Task ShowValidationErrorsAsync(ValidationResult result)
         {
-            StringBuilder errorMessage = new();
-
-            foreach (ValidationResult result in results)
-            {
-                errorMessage.AppendLine(result.ErrorMessage);
-            }
-
-            await Application.Current.MainPage.DisplayAlert("Invalid input", errorMessage.ToString(), "Cancel");
+            await Application.Current.MainPage.DisplayAlert("Invalid input", result.ErrorMessage.ToString(), "Cancel");
         }
     }
 }

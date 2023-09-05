@@ -1,3 +1,4 @@
+using System.Collections.ObjectModel;
 using System.Net;
 using System.Numerics;
 
@@ -84,6 +85,19 @@ public static class Subnetting
         }
 
         return ouput;
+    }
+
+    public static ObservableCollection<double> ValidSubnets(int prefixLength)
+    {
+        ObservableCollection<double> output = new();
+
+        double totalHosts = Math.Pow(2, 32 - prefixLength);
+
+        for (int i = 1; i <= totalHosts; i++)
+        {
+            if (BitOperations.IsPow2(i)) { output.Add(i); }
+        }
+        return output;
     }
 
     public static long GetTotalNumberOfDesiredHosts(IEnumerable<VSubnet> subnets)
