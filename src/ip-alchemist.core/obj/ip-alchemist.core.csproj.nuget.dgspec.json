@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {}
+    "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {}
   },
   "projects": {
-    "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
+    "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
+        "projectUniqueName": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
         "projectName": "ip-alchemist.core",
-        "projectPath": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
+        "projectPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\obj\\",
+        "outputPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -61,11 +61,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win10-x64": {
-          "#import": []
         }
       }
     }

@@ -2,41 +2,34 @@
 using CommunityToolkit.Mvvm.Input;
 using ip_alchemist.core;
 using ip_alchemist.gui.Attributes;
+using ip_alchemist.gui.Models;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace ip_alchemist.gui.ViewModels
 {
-    partial  class FLSMViewModel : ObservableValidator
+    partial class FLSMViewModel : ObservableValidator
     {
         public FLSMViewModel() { }
 
         public static FBlock Network { get; set; }
 
+        #region Observable Properties
+
         [ObservableProperty]
-        [NotifyPropertyChangedFor(nameof(CanSubnet))]
+        [NotifyPropertyChangedFor(nameof(CanGenerateSubnets))]
         [IPAddress(ErrorMessage = "- This is not a vaild IPv4 address.")]
         private string address;
 
         [ObservableProperty]
-        [NotifyPropertyChangedFor(nameof(CanSubnet))]
+        [NotifyPropertyChangedFor(nameof(CanGenerateSubnets))]
+        [NotifyPropertyChangedFor(nameof(ValidSubnets))]
         private string prefixLength;
 
         [ObservableProperty]
-        [NotifyPropertyChangedFor(nameof(CanSubnet))]
-        //[NotifyPropertyChangedFor(nameof(Subnets))]
-        private int numberOfSubnets;
+        [NotifyPropertyChangedFor(nameof(CanGenerateSubnets))]
+        private string numberOfSubnets;
 
-        public ObservableCollection<string> PrefixLengths => new() 
-        { 
-            "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", 
-            "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", 
-            "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" 
-        };
-
-        //public ObservableCollection<double> Subnets => Subnetting.ValidSubnets(PrefixLength);
-        
         [ObservableProperty]
         private string binaryNetworkMask;
 
@@ -64,16 +57,34 @@ namespace ip_alchemist.gui.ViewModels
         [ObservableProperty]
         private string totalValidHosts;
 
-        public bool CanSubnet => !string.IsNullOrWhiteSpace(Address);
+        #endregion
+
+        public ObservableCollection<string> PrefixLengths => new()
+        {
+            "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+            "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
+            "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"
+        };
+
+        public ObservableCollection<string> ValidSubnets => Subnetting.ValidSubnets(PrefixLength);
+
+        [ObservableProperty]
+        public ObservableCollection<SubnetModel> subnets;
+
+        public bool CanGenerateSubnets => !string.IsNullOrWhiteSpace(Address) && !string.IsNullOrWhiteSpace(PrefixLength) && !string.IsNullOrWhiteSpace(NumberOfSubnets);
 
         [RelayCommand]
-        private async Task GenerateNetworkInformation()
+        private async Task GenerateSubnets()
         {
             ValidateAllProperties();
-            if (HasErrors) { await ShowValidationErrorsAsync(GetErrors()); return; }
 
-            Network = new(Address, int.Parse(PrefixLength));
-            
+            if (HasErrors) { await ShowValidationErrorsAsync(GetErrors().FirstOrDefault()); return; }
+
+            Network = new(Address, int.Parse(PrefixLength))
+            {
+                NumberOfSubnets = int.Parse(NumberOfSubnets)
+            };
+
             BinaryNetworkMask = Network.NetworkMask.binaryMask;
             DecimalNetworkMask = Network.NetworkMask.decimalMask.ToString();
             WildcardMask = Network.WildcardMask.ToString();
@@ -83,18 +94,45 @@ namespace ip_alchemist.gui.ViewModels
             TotalHosts = Network.TotalHosts.ToString();
             TotalValidHosts = Network.TotalValidHosts.ToString();
             Range = Network.AddressRange;
+
+            GenerateFixedLengthSubnets();
         }
 
-        private static async Task ShowValidationErrorsAsync(IEnumerable<ValidationResult> results)
+        private static async Task ShowValidationErrorsAsync(ValidationResult result)
         {
-            StringBuilder errorMessage = new();
+            await Application.Current.MainPage.DisplayAlert("Invalid input", result.ErrorMessage.ToString(), "Cancel");
+        }
 
-            foreach (ValidationResult result in results)
+        private void GenerateFixedLengthSubnets()
+        {
+            Network.Subnets = new();
+            Subnets = new();
+
+            //create first subnet
+            Subnet subnet = new()
             {
-                errorMessage.AppendLine(result.ErrorMessage);
-            }
+                Number = 1,
+                Address = Network.Address,
+                Hosts = Network.HostsPerSubnet,
+                PrefixLength = 32 - (int)Math.Log2(Network.HostsPerSubnet)
+            };
 
-            await Application.Current.MainPage.DisplayAlert("Invalid input", errorMessage.ToString(), "Cancel");
+            Network.Subnets.Add(subnet);
+            Subnets.Add(new(subnet));
+            
+
+            for (int i = 1; i < Network.NumberOfSubnets; i++)
+            {
+                Subnet subnet1 = new()
+                {
+                    Number = i + 1,
+                    Address = Subnetting.GetNextAvailableIPAddress(Network.Subnets[i - 1].BroadcastAddress),
+                    Hosts = Network.NumberOfSubnets,
+                    PrefixLength = 32 - (int)Math.Log2(Network.HostsPerSubnet)
+                };
+                Network.Subnets.Add(subnet1);
+                Subnets.Add(new(subnet1));
+            }
         }
     }
 }

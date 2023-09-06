@@ -5,7 +5,6 @@ using ip_alchemist.gui.Attributes;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Net;
-using System.Text;
 
 namespace ip_alchemist.gui.ViewModels
 {

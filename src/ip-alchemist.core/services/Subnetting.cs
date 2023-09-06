@@ -87,15 +87,17 @@ public static class Subnetting
         return ouput;
     }
 
-    public static ObservableCollection<double> ValidSubnets(int prefixLength)
+    public static ObservableCollection<string> ValidSubnets(string prefixLength)
     {
-        ObservableCollection<double> output = new();
+        ObservableCollection<string> output = new();
 
-        double totalHosts = Math.Pow(2, 32 - prefixLength);
+        if (string.IsNullOrEmpty(prefixLength)) return output;
+
+        double totalHosts = Math.Pow(2, 32 - int.Parse(prefixLength));
 
         for (int i = 1; i <= totalHosts; i++)
         {
-            if (BitOperations.IsPow2(i)) { output.Add(i); }
+            if (int.IsPow2(i)) { output.Add(i.ToString()); }
         }
         return output;
     }

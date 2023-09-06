@@ -4,5 +4,307 @@
         <name>ip-alchemist.gui</name>
     </assembly>
     <members>
+        <member name="T:ip_alchemist.gui.ViewModels.FLSMViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.Address">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.address"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.PrefixLength">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.prefixLength"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.NumberOfSubnets">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.numberOfSubnets"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.BinaryNetworkMask">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.binaryNetworkMask"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.DecimalNetworkMask">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.decimalNetworkMask"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.WildcardMask">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.wildcardMask"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.NetworkAddress">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.networkAddress"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.BroadcastAddress">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.broadcastAddress"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.NetworkType">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.networkType"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.Range">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.range"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.TotalHosts">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.totalHosts"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.TotalValidHosts">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.FLSMViewModel.totalValidHosts"/>
+        </member>
+        <member name="F:ip_alchemist.gui.ViewModels.FLSMViewModel.generateNetworkInformationCommand">
+            <summary>The backing field for <see cref="P:ip_alchemist.gui.ViewModels.FLSMViewModel.GenerateNetworkInformationCommand"/>.</summary>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.FLSMViewModel.GenerateNetworkInformationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ip_alchemist.gui.ViewModels.FLSMViewModel.GenerateNetworkInformation"/>.</summary>
+        </member>
+        <member name="T:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.Address">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.address"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.PrefixLength">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.prefixLength"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.BinaryNetworkMask">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.binaryNetworkMask"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.DecimalNetworkMask">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.decimalNetworkMask"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.WildcardMask">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.wildcardMask"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.NetworkAddress">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.networkAddress"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.BroadcastAddress">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.broadcastAddress"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.NetworkType">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.networkType"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.Range">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.range"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.TotalHosts">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.totalHosts"/>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.TotalValidHosts">
+            <inheritdoc cref="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.totalValidHosts"/>
+        </member>
+        <member name="F:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.generateNetworkInformationCommand">
+            <summary>The backing field for <see cref="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.GenerateNetworkInformationCommand"/>.</summary>
+        </member>
+        <member name="P:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.GenerateNetworkInformationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel.GenerateNetworkInformation"/>.</summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Address">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Address" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PrefixLength">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PrefixLength" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NumberOfSubnets">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NumberOfSubnets" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BinaryNetworkMask">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BinaryNetworkMask" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DecimalNetworkMask">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DecimalNetworkMask" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.WildcardMask">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "WildcardMask" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NetworkAddress">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NetworkAddress" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BroadcastAddress">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BroadcastAddress" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NetworkType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NetworkType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Range">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Range" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalHosts">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalHosts" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalValidHosts">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalValidHosts" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Address">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Address" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CanSubnet">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CanSubnet" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PrefixLength">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PrefixLength" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Subnets">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Subnets" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NumberOfSubnets">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NumberOfSubnets" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BinaryNetworkMask">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BinaryNetworkMask" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DecimalNetworkMask">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DecimalNetworkMask" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.WildcardMask">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "WildcardMask" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NetworkAddress">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NetworkAddress" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BroadcastAddress">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BroadcastAddress" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NetworkType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NetworkType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Range">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Range" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalHosts">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalHosts" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalValidHosts">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalValidHosts" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CanGenerateNetworkInformation">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CanGenerateNetworkInformation" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__ObservableValidatorExtensions">
+            <summary>
+            A helper type with generated validation stubs for types deriving from <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservableValidator"/>.
+            </summary>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.ComponentModel.__Internals.__ObservableValidatorExtensions.CreateAllPropertiesValidator(ip_alchemist.gui.ViewModels.FLSMViewModel)">
+            <summary>
+            Creates a validation stub for <see cref="T:ip_alchemist.gui.ViewModels.FLSMViewModel"/> objects.
+            </summary>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A validation stub for <see cref="T:ip_alchemist.gui.ViewModels.FLSMViewModel"/> objects.</returns>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.ComponentModel.__Internals.__ObservableValidatorExtensions.CreateAllPropertiesValidator(ip_alchemist.gui.ViewModels.NetworkOverviewViewModel)">
+            <summary>
+            Creates a validation stub for <see cref="T:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel"/> objects.
+            </summary>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A validation stub for <see cref="T:ip_alchemist.gui.ViewModels.NetworkOverviewViewModel"/> objects.</returns>
+        </member>
     </members>
 </doc>

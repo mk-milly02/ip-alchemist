@@ -30,25 +30,25 @@
     <AppXManifest Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-09-04T22:05:18.284</Modified>
+      <Modified>2023-09-06T12:03:11.657</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-09-04T22:05:17.881</Modified>
+      <Modified>2023-09-06T11:48:49.604</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ip-alchemist.gui.runtimeconfig.json">
       <PackagePath>ip-alchemist.gui.runtimeconfig.json</PackagePath>
-      <Modified>2023-09-03T15:49:52.587</Modified>
+      <Modified>2023-09-06T09:16:34.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ip-alchemist.gui.dll">
       <PackagePath>ip-alchemist.gui.dll</PackagePath>
-      <Modified>2023-09-04T22:05:16.786</Modified>
+      <Modified>2023-09-06T12:03:10.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ip-alchemist.gui.exe</PackagePath>
-      <Modified>2023-09-04T22:05:16.798</Modified>
+      <Modified>2023-09-06T12:03:10.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonas\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -936,11 +936,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.core\bin\Debug\net7.0\ip-alchemist.core.dll">
       <PackagePath>ip-alchemist.core.dll</PackagePath>
-      <Modified>2023-09-04T22:02:06.265</Modified>
+      <Modified>2023-09-05T20:13:11.139</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ip-alchemist.gui.deps.json">
       <PackagePath>ip-alchemist.gui.deps.json</PackagePath>
-      <Modified>2023-09-04T22:05:18.145</Modified>
+      <Modified>2023-09-06T12:03:11.517</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
