@@ -115,6 +115,7 @@ public static class Extensions
             string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
                         + $"\\{FBlock.Address!}-{FBlock.PrefixLength}-{FBlock.NumberOfSubnets}.csv";
             FileOperations.WriteToCSV(path, FBlock.Subnets);
+            AnsiConsole.MarkupLine($"\n[blue]![/] Output printed to [link={path}]this file on your desktop[/]");
         }
     }   
 
@@ -193,6 +194,7 @@ public static class Extensions
                             + $"\\{VBlock.Address!}-{VBlock.PrefixLength}-{VBlock.NumberOfSubnets}.csv";
 
                 FileOperations.WriteToCSV(path, VBlock.Subnets!);
+                AnsiConsole.MarkupLine($"\n[blue]![/] Output printed to [link={path}]this file on your desktop[/]");
             }
         }
         else

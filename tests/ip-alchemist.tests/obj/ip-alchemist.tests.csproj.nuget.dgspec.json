@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\ip-alchemist.tests.csproj": {}
+    "d:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\ip-alchemist.tests.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
+    "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
+        "projectUniqueName": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
         "projectName": "ip-alchemist.core",
-        "projectPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
+        "projectPath": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\obj\\",
+        "outputPath": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "D:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\ip-alchemist.tests.csproj": {
+    "d:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\ip-alchemist.tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\ip-alchemist.tests.csproj",
+        "projectUniqueName": "d:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\ip-alchemist.tests.csproj",
         "projectName": "ip-alchemist.tests",
-        "projectPath": "D:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\ip-alchemist.tests.csproj",
+        "projectPath": "d:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\ip-alchemist.tests.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\obj\\",
+        "outputPath": "d:\\Projects\\ip-alchemist\\tests\\ip-alchemist.tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
-                "projectPath": "D:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj"
+              "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj": {
+                "projectPath": "d:\\Projects\\ip-alchemist\\src\\ip-alchemist.core\\ip-alchemist.core.csproj"
               }
             }
           }

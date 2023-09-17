@@ -30,25 +30,25 @@
     <AppXManifest Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-09-06T12:03:11.657</Modified>
+      <Modified>2023-09-10T16:36:32.295</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-09-06T11:48:49.604</Modified>
+      <Modified>2023-09-10T16:36:31.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ip-alchemist.gui.runtimeconfig.json">
       <PackagePath>ip-alchemist.gui.runtimeconfig.json</PackagePath>
-      <Modified>2023-09-06T09:16:34.054</Modified>
+      <Modified>2023-09-10T16:26:31.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ip-alchemist.gui.dll">
       <PackagePath>ip-alchemist.gui.dll</PackagePath>
-      <Modified>2023-09-06T12:03:10.153</Modified>
+      <Modified>2023-09-10T16:36:30.739</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ip-alchemist.gui.exe</PackagePath>
-      <Modified>2023-09-06T12:03:10.165</Modified>
+      <Modified>2023-09-10T16:36:30.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonas\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -936,11 +936,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.core\bin\Debug\net7.0\ip-alchemist.core.dll">
       <PackagePath>ip-alchemist.core.dll</PackagePath>
-      <Modified>2023-09-05T20:13:11.139</Modified>
+      <Modified>2023-09-10T16:15:33.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ip-alchemist.gui.deps.json">
       <PackagePath>ip-alchemist.gui.deps.json</PackagePath>
-      <Modified>2023-09-06T12:03:11.517</Modified>
+      <Modified>2023-09-10T16:36:32.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -960,23 +960,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-09-01T09:04:48.904</Modified>
+      <Modified>2023-09-10T16:26:28.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-09-01T09:04:48.934</Modified>
+      <Modified>2023-09-10T16:26:28.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-09-01T09:04:48.975</Modified>
+      <Modified>2023-09-10T16:26:28.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.050</Modified>
+      <Modified>2023-09-10T16:26:28.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.324</Modified>
+      <Modified>2023-09-10T16:26:29.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -986,393 +986,209 @@
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2023-09-01T06:33:39.949</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
-      <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-09-01T09:04:49.377</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
-      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.889</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
-      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.910</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
-      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.928</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
-      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.968</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
-      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-09-01T09:04:50.106</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.505</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.518</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.553</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.522</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.535</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.470</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.487</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.505</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.487</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.496</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
-      <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.404</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
-      <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.408</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
-      <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.408</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
-      <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.419</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
-      <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.421</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
-      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.441</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
-      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.442</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
-      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.469</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
-      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.442</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
-      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.451</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
-      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.672</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
-      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.681</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
-      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.685</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
-      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.718</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
-      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.758</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
-      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.593</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
-      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.593</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
-      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.603</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
-      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.610</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
-      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.630</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
-      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.558</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
-      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.559</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
-      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.564</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
-      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.574</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
-      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.585</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
-      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.768</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
-      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.785</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
-      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.803</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
-      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.824</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
-      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-09-01T09:04:49.878</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.836</Modified>
+      <Modified>2023-09-10T16:26:29.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.853</Modified>
+      <Modified>2023-09-10T16:26:29.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.876</Modified>
+      <Modified>2023-09-10T16:26:29.117</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.901</Modified>
+      <Modified>2023-09-10T16:26:29.145</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.976</Modified>
+      <Modified>2023-09-10T16:26:29.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminal.ico">
       <PackagePath>terminal.ico</PackagePath>
-      <Modified>2023-09-01T11:06:43.622</Modified>
+      <Modified>2023-09-10T16:26:29.072</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLargeTile.scale-100.png">
       <PackagePath>terminalLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.934</Modified>
+      <Modified>2023-09-10T16:26:29.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLargeTile.scale-125.png">
       <PackagePath>terminalLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.952</Modified>
+      <Modified>2023-09-10T16:26:29.264</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLargeTile.scale-150.png">
       <PackagePath>terminalLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.968</Modified>
+      <Modified>2023-09-10T16:26:29.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLargeTile.scale-200.png">
       <PackagePath>terminalLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.996</Modified>
+      <Modified>2023-09-10T16:26:29.296</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLargeTile.scale-400.png">
       <PackagePath>terminalLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-09-01T11:06:44.076</Modified>
+      <Modified>2023-09-10T16:26:29.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>terminalLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.679</Modified>
+      <Modified>2023-09-10T16:26:29.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>terminalLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.679</Modified>
+      <Modified>2023-09-10T16:26:29.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>terminalLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.688</Modified>
+      <Modified>2023-09-10T16:26:29.119</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>terminalLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.680</Modified>
+      <Modified>2023-09-10T16:26:29.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>terminalLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.680</Modified>
+      <Modified>2023-09-10T16:26:29.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.altform-unplated_targetsize-16.png">
       <PackagePath>terminalLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.658</Modified>
+      <Modified>2023-09-10T16:26:29.099</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.altform-unplated_targetsize-24.png">
       <PackagePath>terminalLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.668</Modified>
+      <Modified>2023-09-10T16:26:29.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.altform-unplated_targetsize-256.png">
       <PackagePath>terminalLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.678</Modified>
+      <Modified>2023-09-10T16:26:29.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.altform-unplated_targetsize-32.png">
       <PackagePath>terminalLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.670</Modified>
+      <Modified>2023-09-10T16:26:29.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.altform-unplated_targetsize-48.png">
       <PackagePath>terminalLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.671</Modified>
+      <Modified>2023-09-10T16:26:29.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.scale-100.png">
       <PackagePath>terminalLogo.scale-100.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.625</Modified>
+      <Modified>2023-09-10T16:26:29.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.scale-125.png">
       <PackagePath>terminalLogo.scale-125.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.626</Modified>
+      <Modified>2023-09-10T16:26:29.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.scale-150.png">
       <PackagePath>terminalLogo.scale-150.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.626</Modified>
+      <Modified>2023-09-10T16:26:29.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.scale-200.png">
       <PackagePath>terminalLogo.scale-200.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.629</Modified>
+      <Modified>2023-09-10T16:26:29.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.scale-400.png">
       <PackagePath>terminalLogo.scale-400.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.632</Modified>
+      <Modified>2023-09-10T16:26:29.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.targetsize-16.png">
       <PackagePath>terminalLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.634</Modified>
+      <Modified>2023-09-10T16:26:29.088</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.targetsize-24.png">
       <PackagePath>terminalLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.635</Modified>
+      <Modified>2023-09-10T16:26:29.089</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.targetsize-256.png">
       <PackagePath>terminalLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.654</Modified>
+      <Modified>2023-09-10T16:26:29.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.targetsize-32.png">
       <PackagePath>terminalLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.636</Modified>
+      <Modified>2023-09-10T16:26:29.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalLogo.targetsize-48.png">
       <PackagePath>terminalLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.636</Modified>
+      <Modified>2023-09-10T16:26:29.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalMediumTile.scale-100.png">
       <PackagePath>terminalMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.735</Modified>
+      <Modified>2023-09-10T16:26:29.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalMediumTile.scale-125.png">
       <PackagePath>terminalMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.742</Modified>
+      <Modified>2023-09-10T16:26:29.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalMediumTile.scale-150.png">
       <PackagePath>terminalMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.752</Modified>
+      <Modified>2023-09-10T16:26:29.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalMediumTile.scale-200.png">
       <PackagePath>terminalMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.785</Modified>
+      <Modified>2023-09-10T16:26:29.166</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalMediumTile.scale-400.png">
       <PackagePath>terminalMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.818</Modified>
+      <Modified>2023-09-10T16:26:29.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalSmallTile.scale-100.png">
       <PackagePath>terminalSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.709</Modified>
+      <Modified>2023-09-10T16:26:29.131</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalSmallTile.scale-125.png">
       <PackagePath>terminalSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.709</Modified>
+      <Modified>2023-09-10T16:26:29.133</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalSmallTile.scale-150.png">
       <PackagePath>terminalSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.712</Modified>
+      <Modified>2023-09-10T16:26:29.135</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalSmallTile.scale-200.png">
       <PackagePath>terminalSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.714</Modified>
+      <Modified>2023-09-10T16:26:29.138</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalSmallTile.scale-400.png">
       <PackagePath>terminalSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.721</Modified>
+      <Modified>2023-09-10T16:26:29.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalStoreLogo.scale-100.png">
       <PackagePath>terminalStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.691</Modified>
+      <Modified>2023-09-10T16:26:29.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalStoreLogo.scale-125.png">
       <PackagePath>terminalStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.692</Modified>
+      <Modified>2023-09-10T16:26:29.122</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalStoreLogo.scale-150.png">
       <PackagePath>terminalStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.693</Modified>
+      <Modified>2023-09-10T16:26:29.124</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalStoreLogo.scale-200.png">
       <PackagePath>terminalStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.693</Modified>
+      <Modified>2023-09-10T16:26:29.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalStoreLogo.scale-400.png">
       <PackagePath>terminalStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.707</Modified>
+      <Modified>2023-09-10T16:26:29.129</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalWideTile.scale-100.png">
       <PackagePath>terminalWideTile.scale-100.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.828</Modified>
+      <Modified>2023-09-10T16:26:29.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalWideTile.scale-125.png">
       <PackagePath>terminalWideTile.scale-125.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.838</Modified>
+      <Modified>2023-09-10T16:26:29.196</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalWideTile.scale-150.png">
       <PackagePath>terminalWideTile.scale-150.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.853</Modified>
+      <Modified>2023-09-10T16:26:29.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalWideTile.scale-200.png">
       <PackagePath>terminalWideTile.scale-200.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.870</Modified>
+      <Modified>2023-09-10T16:26:29.212</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ip-alchemist\src\ip-alchemist.gui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\terminalWideTile.scale-400.png">
       <PackagePath>terminalWideTile.scale-400.png</PackagePath>
-      <Modified>2023-09-01T11:06:43.930</Modified>
+      <Modified>2023-09-10T16:26:29.249</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

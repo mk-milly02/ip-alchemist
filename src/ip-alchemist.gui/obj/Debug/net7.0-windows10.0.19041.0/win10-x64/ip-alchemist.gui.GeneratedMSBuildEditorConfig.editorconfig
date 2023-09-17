@@ -8,51 +8,39 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ip_alchemist.gui
-build_property.ProjectDir = D:\Projects\ip-alchemist\src\ip-alchemist.gui\
+build_property.ProjectDir = d:\Projects\ip-alchemist\src\ip-alchemist.gui\
 
-[D:/Projects/ip-alchemist/src/ip-alchemist.gui/App.xaml]
+[d:/Projects/ip-alchemist/src/ip-alchemist.gui/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ip_alchemist.gui.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/Projects/ip-alchemist/src/ip-alchemist.gui/AppShell.xaml]
+[d:/Projects/ip-alchemist/src/ip-alchemist.gui/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ip_alchemist.gui.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/Projects/ip-alchemist/src/ip-alchemist.gui/Resources/Styles/Colors.xaml]
+[d:/Projects/ip-alchemist/src/ip-alchemist.gui/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ip_alchemist.gui.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/Projects/ip-alchemist/src/ip-alchemist.gui/Resources/Styles/Styles.xaml]
+[d:/Projects/ip-alchemist/src/ip-alchemist.gui/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ip_alchemist.gui.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[D:/Projects/ip-alchemist/src/ip-alchemist.gui/Views/AboutPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = ip_alchemist.gui.Views.AboutPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\AboutPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\AboutPage.xaml
-
-[D:/Projects/ip-alchemist/src/ip-alchemist.gui/Views/FLSMPage.xaml]
+[d:/Projects/ip-alchemist/src/ip-alchemist.gui/Views/FLSMPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ip_alchemist.gui.Views.FLSMPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\FLSMPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\FLSMPage.xaml
 
-[D:/Projects/ip-alchemist/src/ip-alchemist.gui/Views/MainPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = ip_alchemist.gui.Views.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\MainPage.xaml
-
-[D:/Projects/ip-alchemist/src/ip-alchemist.gui/Views/NetworkOverviewPage.xaml]
+[d:/Projects/ip-alchemist/src/ip-alchemist.gui/Views/NetworkOverviewPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ip_alchemist.gui.Views.NetworkOverviewPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\NetworkOverviewPage.xaml

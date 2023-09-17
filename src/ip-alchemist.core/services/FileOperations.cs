@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace ip_alchemist.core;
 
 public static class FileOperations
@@ -14,6 +16,19 @@ public static class FileOperations
 
         }
         writer.Close();
-        //AnsiConsole.MarkupLine($"\n[blue]![/] Output printed to [link={path}]this file on your desktop[/]");
+    }
+
+    public static string WriteToCSV(IEnumerable<Subnet> subnets)
+    {
+        StringBuilder builder = new();
+
+        builder.AppendLine($"Number, Network Mask, Binary Mask, Prefix Length, Network Address, Broadcast Address, Total Hosts, Total Valid Hosts, Address Range");
+
+        foreach (Subnet subnet in subnets)
+        {
+            builder.AppendLine(subnet.ToString());
+
+        }
+        return builder.ToString();
     }
 }

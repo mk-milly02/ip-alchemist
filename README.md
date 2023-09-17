@@ -10,7 +10,7 @@ ip-alchemist-cli is a command-line tool that provides a variety of useful featur
 
 ### **Prerequisites**
 
--   .NET 6.0 SDK or later
+-   .NET 7.0 SDK or later
 
 ### **Installation**
 

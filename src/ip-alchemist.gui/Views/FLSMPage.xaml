@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:ip_alchemist.gui.ViewModels"
              xmlns:models="clr-namespace:ip_alchemist.gui.Models"
+             xmlns:converters="clr-namespace:ip_alchemist.gui.Converters"
              x:Class="ip_alchemist.gui.Views.FLSMPage"
              x:DataType="viewmodels:FLSMViewModel"
              Shell.NavBarIsVisible="False">
@@ -90,10 +91,14 @@
                 </HorizontalStackLayout>
             </Grid>
 
-            <Label Text="Subnets" TextColor="{StaticResource Primary}" FontSize="Subtitle" />
-
+            <Grid ColumnDefinitions="*, *">
+                <Label Text="Subnets" TextColor="{StaticResource Primary}" FontSize="Subtitle" />
+                <Button Grid.Column="1" Text="Export" Style="{StaticResource Borderless}" 
+                        HorizontalOptions="End" IsEnabled="{Binding CanExport}" Command="{Binding ExportCommand}"/>
+            </Grid>
+            
             <VerticalStackLayout BindableLayout.ItemsSource="{Binding Subnets}">
-
+                
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
                         <Grid ColumnDefinitions="50, *, *" x:DataType="models:SubnetModel" Padding="15">

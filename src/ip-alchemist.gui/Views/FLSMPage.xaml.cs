@@ -4,9 +4,9 @@ namespace ip_alchemist.gui.Views;
 
 public partial class FLSMPage : ContentPage
 {
-	public FLSMPage()
+    public FLSMPage()
 	{
 		InitializeComponent();
 		BindingContext = new FLSMViewModel();
-	}
+    }
 }

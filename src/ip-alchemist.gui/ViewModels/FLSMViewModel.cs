@@ -1,18 +1,21 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Maui.Alerts;
+using CommunityToolkit.Maui.Storage;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using ip_alchemist.core;
 using ip_alchemist.gui.Attributes;
 using ip_alchemist.gui.Models;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
 
 namespace ip_alchemist.gui.ViewModels
 {
-    partial class FLSMViewModel : ObservableValidator
+    public partial class FLSMViewModel : ObservableValidator
     {
-        public FLSMViewModel() { }
+        public FLSMViewModel() { Subnets = new(); }
 
-        public static FBlock Network { get; set; }
+        private static FBlock Network { get; set; }
 
         #region Observable Properties
 
@@ -69,9 +72,11 @@ namespace ip_alchemist.gui.ViewModels
         public ObservableCollection<string> ValidSubnets => Subnetting.ValidSubnets(PrefixLength);
 
         [ObservableProperty]
-        public ObservableCollection<SubnetModel> subnets;
+        private ObservableCollection<SubnetModel> subnets;
 
         public bool CanGenerateSubnets => !string.IsNullOrWhiteSpace(Address) && !string.IsNullOrWhiteSpace(PrefixLength) && !string.IsNullOrWhiteSpace(NumberOfSubnets);
+
+        public bool CanExport => true;
 
         [RelayCommand]
         private async Task GenerateSubnets()
@@ -98,6 +103,19 @@ namespace ip_alchemist.gui.ViewModels
             GenerateFixedLengthSubnets();
         }
 
+        [RelayCommand]
+        private async Task Export()
+        {
+            string name = $"{Network.Address}-{Network.PrefixLength}-{Network.NumberOfSubnets}.csv";
+            string content = FileOperations.WriteToCSV(Network.Subnets);
+
+            MemoryStream stream = new(Encoding.UTF8.GetBytes(content));
+            FileSaverResult result = await FileSaver.Default.SaveAsync(name, stream, CancellationToken.None);
+
+            if (result.IsSuccessful) { Toast.Make($"{name} has been saved to {result.FilePath}"); }
+            else { Toast.Make($"{name} could not be saved."); }
+        }
+
         private static async Task ShowValidationErrorsAsync(ValidationResult result)
         {
             await Application.Current.MainPage.DisplayAlert("Invalid input", result.ErrorMessage.ToString(), "Cancel");
@@ -106,7 +124,6 @@ namespace ip_alchemist.gui.ViewModels
         private void GenerateFixedLengthSubnets()
         {
             Network.Subnets = new();
-            Subnets = new();
 
             //create first subnet
             Subnet subnet = new()
