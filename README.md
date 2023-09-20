@@ -3,7 +3,7 @@
 ip-alchemist-cli is a command-line tool that provides a variety of useful features for subnetting IPv4 addresses.
 
 <p align="center">
- <img width=200px height=200px src="docs\ip-alchemist-cli.png" alt="Project logo"></a>
+ <img width=200px height=200px src="https://github.com/mk-milly02/ip-alchemist/blob/master/docs/ip-alchemist.png" alt="Project logo"></a>
 </p>
 
 ## **Getting Started**
