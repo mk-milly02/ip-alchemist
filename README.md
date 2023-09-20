@@ -3,7 +3,7 @@
 ip-alchemist-cli is a command-line tool that provides a variety of useful features for subnetting IPv4 addresses.
 
 <p align="center">
- <img width=200px height=200px src="assets\ip-alchemist-cli.png" alt="Project logo"></a>
+ <img width=200px height=200px src="docs\ip-alchemist-cli.png" alt="Project logo"></a>
 </p>
 
 ## **Getting Started**
@@ -30,7 +30,7 @@ To use the app, simply run it from the command line and follow the prompts. You 
 
 **Menu**
 
-![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/menu.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/docs/menu.png)
 
 **Network Information**
 
@@ -38,7 +38,7 @@ To use the app, simply run it from the command line and follow the prompts. You 
 eg. 192.168.1.0/24
 ```
 
-![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/network-information.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/docs/network-information.png)
 
 **Fixed-length Subnet Mask**
 
@@ -46,9 +46,9 @@ eg. 192.168.1.0/24
 eg. 192.168.1.0/24, 4 subnets
 ```
 
-![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/flsm-1.png)
-![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/flsm-2.png)
-![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/flsm-3.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/docs/flsm-1.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/docs/flsm-2.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/docs/flsm-3.png)
 
 **Variable-length Subnet Mask**
 
@@ -56,8 +56,8 @@ eg. 192.168.1.0/24, 4 subnets
 eg. 192.168.1.0/24, 2 subnets [100 hosts, 45 hosts]
 ```
 
-![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/vlsm-1.png)
-![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/assets/vlsm-2.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/docs/vlsm-1.png)
+![image](https://github.com/mk-milly02/ip-alchemist-cli/blob/master/docs/vlsm-2.png)
 
 ## **Contributing**
 
